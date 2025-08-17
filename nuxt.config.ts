@@ -32,6 +32,9 @@ export default defineNuxtConfig({
       })
     },
   ],
+  gtag: {
+    id: 'G-64QE574FWB'
+  },
   css: [
     '/assets/scss/global.scss',
     '/assets/scss/article.scss',

@@ -1,10 +1,16 @@
 <template>
     <v-container>
         <div class="contact">
-            <div class="contact-email">xxxxxxxxxxxxx.gmail.com</div>
-            <div class="contact-insta">
-                <NuxtLink to="https://www.instagram.com/shinadooo">instagram | @shinadoo</NuxtLink>
+            <div class="contact-element">contact.keblog@gmail.com</div>
+            <div class="contact-element">
+                <NuxtLink to="https://www.instagram.com/shinadooo">instagram</NuxtLink>
             </div>
+            <div class="contact-element">
+                <NuxtLink to="https://buymeacoffee.com/shinado">buy me a coffee</NuxtLink>
+
+                
+            </div>
+
         </div>
     </v-container>
 </template>
@@ -23,13 +29,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    .contact-email {
+    .contact-element {
         padding: 14px;
     }
-
-    .contact-insta {
-        padding: 14px;
-    }
-
 }
 </style>
