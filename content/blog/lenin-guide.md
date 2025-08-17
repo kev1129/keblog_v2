@@ -1,6 +1,6 @@
 ---
-title: "レーニン峰 登山ガイド｜アクセス・装備・費用から高所順応まで全まとめ"
-description: "ページの説明"
+title: "レーニン峰 登山ガイド｜アクセス・装備・費用・高所順応"
+description: "レーニン峰登山の計画に最低限必要な情報をまとめました。"
 navigation: true
 draft: false
 date: 2025-8-12
@@ -51,10 +51,13 @@ tags:
 
 現在はフリークライミングに魅了され、岩場での時間を楽しんでいます。
 
-
+<!--
 <div class="img-block">
   <img src="/blog_img/lenin-guide/peak-selfy.JPG" alt="Lenin Peak view from BC" width="50%" class="img-itself"/>
 </div>
+-->
+
+
 
 
 

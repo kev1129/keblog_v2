@@ -1,6 +1,6 @@
 ---
 title: "レーニン峰 登頂記録 | 25/07"
-description: "ページの説明"
+description: "ガイド編を補完するため、レーニン峰に登った時の記録をまとめました。"
 navigation: true
 draft: false
 date: 2025-8-12
