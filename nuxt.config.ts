@@ -20,13 +20,12 @@ export default defineNuxtConfig({
       ],
     }
   },
-
-
   devtools: { enabled: true },
   pages: true,
   modules: ['@nuxt/content', 
     '@nuxtjs/google-fonts', 
     'nuxt-gtag',
+    '@nuxtjs/sitemap',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
@@ -43,6 +42,17 @@ export default defineNuxtConfig({
 //    '/assets/scss/typora-base.scss',
     '@mdi/font/css/materialdesignicons.min.css',
   ],
+  sitemap: {
+    hostname: 'https://keblog.org',
+    gzip: true,
+    xsl: true,
+    routes: [
+      '/',
+      '/contact',
+      '/blog/lenin-doc',
+      '/blog/lenin-guide'
+    ]
+  },
   googleFonts: {
     families: {
       'Lato': true,
