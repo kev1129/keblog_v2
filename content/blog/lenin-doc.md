@@ -1,5 +1,5 @@
 ---
-title: "レーニン峰 | 記録 25/07"
+title: "レーニン峰 登頂記録 | 25/07"
 description: "ページの説明"
 navigation: true
 draft: false
@@ -8,44 +8,6 @@ tags:
   - Mountain
   - Expedition
 ---
-
-# レーニン峰の記録 2025/07
-
-- [レーニン峰の記録 2025/07](#レーニン峰の記録-202507)
-  - [はじめに](#はじめに)
-  - [レーニン峰に登る背景・理由](#レーニン峰に登る背景理由)
-  - [計画概要](#計画概要)
-    - [期間・スケジュール](#期間スケジュール)
-    - [登山のスタイル](#登山のスタイル)
-    - [装備計画](#装備計画)
-    - [食糧計画](#食糧計画)
-  - [レーニン峰登山の風景、様子](#レーニン峰登山の風景様子)
-    - [DAY-1 BC入り](#day-1-bc入り)
-    - [DAY-2,3 BC 3,700m - C1 4,400m](#day-23-bc-3700m---c1-4400m)
-    - [Day-4 C1 4,400m 停滞](#day-4-c1-4400m-停滞)
-    - [DAY-5 C1 4,400m → C2 5,300m | 氷河の世界](#day-5-c1-4400m--c2-5300m--氷河の世界)
-    - [DAY-6 C2 5,300m ↔︎ C3 6,100m](#day-6-c2-5300m-︎-c3-6100m)
-    - [DAY-7,8,9 C2 5,400m → C3 6,100m \& 天気待ち](#day-789-c2-5400m--c3-6100m--天気待ち)
-    - [DAY-10 C3 6,100m ↔︎ Lenin Peak 7,134m](#day-10-c3-6100m-︎-lenin-peak-7134m)
-    - [Day-11 C3 6,100m → BC](#day-11-c3-6100m--bc)
-    - [Day-12 BC 終わり](#day-12-bc-終わり)
-  - [高所について・身体への影響](#高所について身体への影響)
-    - [高所順応について学ぶ](#高所順応について学ぶ)
-    - [国内での準備](#国内での準備)
-      - [プレ高所順応](#プレ高所順応)
-    - [行動時の注意点](#行動時の注意点)
-    - [結果 | 高所での行動、身体への影響](#結果--高所での行動身体への影響)
-      - [生理への影響](#生理への影響)
-      - [意識への影響](#意識への影響)
-      - [食生活への影響 | 高所で美味しいものは？](#食生活への影響--高所で美味しいものは)
-      - [効果のあった薬類](#効果のあった薬類)
-    - [その他](#その他)
-  - [振り返りと展望](#振り返りと展望)
-  - [参考情報・リンク](#参考情報リンク)
-    - [書籍](#書籍)
-    - [リンク](#リンク)
-
--------------------
 
 ## はじめに
 
@@ -90,13 +52,14 @@ tags:
 ## 計画概要
 
 ### 期間・スケジュール
-**期間**：2025年7月9日 ~ 8月3日（26日間）
+期間：　2025年7月9日 ~ 8月3日（26日間）
 
 渡航〜BCのアプローチに往復、約10日間を要するため山行に使える日数は最長で18日。
 
+#### 行動記録
 
+**標高**：BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
-**行動記録**
 
 | 日数 / 山行日数 | 日付       | 行動内容                                   |
 | --------------- | ---------- | ------------------------------------------ |
@@ -104,33 +67,32 @@ tags:
 | 2               | 7/10       | ICN - FRU（マナス国際空港）                |
 | 3               | 7/11       | FRU - オシュ                               |
 | 4               | 7/12       | オシュ滞在（買い出し、休息）               |
-| 5               | 7/13       | ▲Day1: オシュ - BC                         |
-| 6               | 7/14       | ▲Day2: BC ↔︎ C1（荷揚げ 9日分）             |
-| 7               | 7/15       | ▲Day3: BC → C1（荷揚げ 9日分）             |
-| 8               | 7/16       | ▲Day4: C1                                  |
-| 9               | 7/17       | ▲Day5: C1 → C2（荷揚げ 6日分）             |
-| 10              | 7/18       | ▲Day6: C2 ↔︎ C3                             |
-| 11              | 7/19       | ▲Day7: C2                                  |
-| 12              | 7/20       | ▲Day8: C2 → C3（荷揚げ 3日分）             |
-| 13              | 7/21       | ▲Day9: C3                                  |
-| 14              | 7/22       | ▲Day10: C3 ↔︎ サミット                      |
-| 15              | 7/23       | ▲Day11: C3 → BC                            |
-| 16              | 7/24       | ▲Day12: BC                                 |
+| 5               | 7/13       | ▲ Day1: オシュ - BC                         |
+| 6               | 7/14       | ▲ Day2: BC ↔︎ C1（荷揚げ 9日分）             |
+| 7               | 7/15       | ▲ Day3: BC → C1（荷揚げ 9日分）             |
+| 8               | 7/16       | ▲ Day4: C1                                  |
+| 9               | 7/17       | ▲ Day5: C1 → C2（荷揚げ 6日分）             |
+| 10              | 7/18       | ▲ Day6: C2 ↔︎ C3                             |
+| 11              | 7/19       | ▲ Day7: C2                                  |
+| 12              | 7/20       | ▲ Day8: C2 → C3（荷揚げ 3日分）             |
+| 13              | 7/21       | ▲ Day9: C3                                  |
+| 14              | 7/22       | ▲ Day10: C3 ↔︎ サミット                      |
+| 15              | 7/23       | ▲ Day11: C3 → BC                            |
+| 16              | 7/24       | ▲ Day12: BC                                 |
 | 17              | 7/25       | BC → オシュ                                |
 | 18              | 7/26       | オシュ滞在（休息）                         |
 | 19              | 7/27       | オシュ → ビシュケク                        |
 | 20 ~ 25         | 7/28 ~ 8/2 | 予備日を使って観光                         |
 | 26              | 8/3        | FRU - ICN - NRT                            |
 
-BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
+<div class="table-caption"></div>
 
 
 
-
-
-<img src="/blog_img/lenin-doc/routes.jpg" alt="equipment list" width="80%" />
-
-<div style="text-align: center;">ルート概要</div>
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/routes.jpg" alt="equipment list" width="80%" class="img-itself"/>
+    <div class="img-caption">ルート概要</div>
+</div>
 
 
 
@@ -156,9 +118,11 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
 
 
-**装備表**
 
-<img src="/blog_img/lenin-doc/equipment-list.png" alt="equipment list" width="100%" />
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/equipment-list.png" alt="equipment list" width="100%" class="img-itself"/>
+    <div class="img-caption">装備表</div>
+</div>
 
 
 
@@ -174,9 +138,11 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
 
 
-**食料計画表**  * 右の写真は日本からの持参品
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/food_list-prep.png" alt="food list" width="100%" class="img-itself"/>
+</div>
 
-<img src="/blog_img/lenin-doc/food_list-prep.png" alt="food list" width="100%" />
+
 
 ## レーニン峰登山の風景、様子
 
@@ -192,11 +158,14 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/lenin_from-bc_evening.JPG" alt="view of Lenin from BC at evening" width="80%" class="img-itself"/>
+    <div class="img-caption">BCから望むレーニン峰</div>
+</div>
 
 
-<img src="/blog_img/lenin-doc/lenin_from-bc_evening.JPG" alt="view of Lenin from BC at evening" width="80%" />
 
-<div style="text-align: center;">BCから望むレーニン峰</div>
+
 
 
 
@@ -209,12 +178,10 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 気を緩めて、のんびりと歩くことのできる区間。この区間では、最後まで雨に降られない日はなかった。
 
 
-
-<img src="/blog_img/lenin-doc/glacier_start.JPG" alt="view of Lenin from BC at evening" width="80%" />
-
-<div style="text-align: center;">氷河のはじまり</div>
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/glacier_start.JPG" alt="view of Lenin from BC at evening" width="80%" class="img-itself"/>
+    <div class="img-caption">氷河のはじまり</div>
+</div>
 
 
 
@@ -243,45 +210,30 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/c1-2_moon.JPG" alt="c1 to c2 at midnight" width="80%" class="img-itself"/>
+    <div class="img-caption">快晴、月あかりでも無数の星が</div>
+</div>
 
-<img src="/blog_img/lenin-doc/c1-2_moon.JPG" alt="c1 to c2 at midnight" width="80%" />
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/c1-2_north-ridge.JPG" alt="a climber ascending by a fixed rope" width="80%" class="img-itself"/>
+    <div class="img-caption">レーニン峰北陵を横目に、FIXロープを伝う</div>
+</div>
 
-<div style="text-align: center;">快晴、月あかりでも無数の星が</div>
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/razdelnaya_ridge.JPG" alt="the ridge of razdelnaya" width="80%" class="img-itself"/>
+    <div class="img-caption">ラズデルナヤピーク（Razdelnaya Peak）からのびる尾根</div>
+</div>
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/north-face_avalanch.JPG" alt="the ridge of razdelnaya" width="80%" class="img-itself"/>
+    <div class="img-caption">レーニン峰北面、雪崩の痕跡とセラック</div>
+</div>
 
-
-
-
-<img src="/blog_img/lenin-doc/c1-2_north-ridge.JPG" alt="a climber ascending by a fixed rope" width="80%" />
-
-<div style="text-align: center;">レーニン峰北陵を横目に、FIXロープを伝う</div>
-
-
-
-
-
-
-
-<img src="/blog_img/lenin-doc/razdelnaya_ridge.JPG" alt="the ridge of razdelnaya" width="80%" />
-
-<div style="text-align: center;">ラズデルナヤピーク（Razdelnaya Peak）からのびる尾根</div>
-
-
-
-
-
-<img src="/blog_img/lenin-doc/north-face_avalanch.JPG" alt="the ridge of razdelnaya" width="80%" />
-
-<div style="text-align: center;">レーニン峰北面、雪崩の痕跡とセラック</div>
-
-
-
-
-
-<img src="/blog_img/lenin-doc/c1-2_ascending.png" alt="ascending rope-up partner" width="80%" />
-
-<div style="text-align: center;">ザイルパートナーのJAMES、ありがとう</div>
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/c1-2_ascending.png" alt="ascending rope-up partner" width="80%" class="img-itself"/>
+    <div class="img-caption">ザイルパートナーのJAMES、ありがとう</div>
+</div>
 
 
 
@@ -294,27 +246,23 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/c2-3_road-to-c3.JPG" alt="The road to C3" width="80%" class="img-itself"/>
+    <div class="img-caption">C3への長い道のり</div>
+</div>
 
 
-<img src="/blog_img/lenin-doc/c2-3_road-to-c3.JPG" alt="The road to C3" width="80%" />
-
-<div style="text-align: center;">C3への長い道のり</div>
-
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/Lenin_south-side-from-razdelnaya.JPG" alt="south side of Lenin from the peak of Razdelnaya" width="80%" class="img-itself"/>
+    <div class="img-caption">ラズデルナヤピークから望むレーニン峰の南面、険しい山容</div>
+</div>
 
 
-<img src="/blog_img/lenin-doc/Lenin_south-side-from-razdelnaya.JPG" alt="south side of Lenin from the peak of Razdelnaya" width="80%" />
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/lenin_from-c3.JPG" alt="Lenin Peak from C3" width="80%" class="img-itself"/>
+    <div class="img-caption">C3から望むレーニン峰、この稜線を歩く</div>
+</div>
 
-<div style="text-align: center;">ラズデルナヤピークから望むレーニン峰の南面、険しい山容</div>
-
-
-
-
-
-<img src="/blog_img/lenin-doc/lenin_from-c3.JPG" alt="Lenin Peak from C3" width="80%" />
-
-<div style="text-align: center;">C3から望むレーニン峰、この稜線を歩く</div>
 
 
 
@@ -347,30 +295,23 @@ BC 3,700m / C1 4,400m / C2 5,300m / C3 6,100m / Lenin Peak 7,134m
 この時間と、陽が出て人の気配が漂う世界との落差によって、自分の進むべき方向をはっきりと認識した。
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/summit_moon.JPG" alt="Hello moon" width="80%" class="img-itself"/>
+    <div class="img-caption">夜明け前のお月様</div>
+</div>
 
 
 
-<img src="/blog_img/lenin-doc/summit_moon.JPG" alt="Hello moon" width="80%" />
-
-<div style="text-align: center;">夜明け前のお月様</div>
-
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/lenin_goodmorning.JPG" alt="Good morning Mr Lenin" width="80%" class="img-itself"/>
+    <div class="img-caption">夜明けのレーニン峰</div>
+</div>
 
 
-<img src="/blog_img/lenin-doc/lenin_goodmorning.JPG" alt="Good morning Mr Lenin" width="80%" />
-
-<div style="text-align: center;">夜明けのレーニン峰</div>
-
-
-
-
-
-<img src="/blog_img/lenin-doc/goodmornig_from-lenin.JPG" alt="Good morning from Lenin" width="50%" />
-
-<div style="text-align: center;">夜明けのレーニン峰、愛おしい色</div>
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/goodmornig_from-lenin.JPG" alt="Good morning from Lenin" width="50%" class="img-itself img-itself-v"/>
+    <div class="img-caption">夜明けのレーニン峰、愛おしい色</div>
+</div>
 
 
 
@@ -384,21 +325,16 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/lenin_northface.JPG" alt="Lenin north face" width="80%" class="img-itself"/>
+    <div class="img-caption">氷河の基部からレーニン峰をふりかえる</div>
+</div>
 
 
-<img src="/blog_img/lenin-doc/lenin_northface.JPG" alt="Lenin north face" width="80%" />
-
-<div style="text-align: center;">氷河の基部からレーニン峰をふりかえる</div>
-
-
-
-
-
-<img src="/blog_img/lenin-doc/makalu.JPG" alt="Thank you Makalu" width="39%" />
-
-<div style="text-align: center;">旅を共にしたマカルー、ありがとう</div>
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/makalu.JPG" alt="Thank you Makalu" width="40%" class="img-itself img-itself-v"/>
+    <div class="img-caption">旅を共にしたマカルー、ありがとう</div>
+</div>
 
 
 
@@ -415,10 +351,10 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 
 
 
-
-<img src="/blog_img/lenin-doc/bc_end.jpg" alt="Complete the expedition" width="47%" />
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/hypoxic-chamber.JPG" alt="Lenin Peak view from BC" width="60%" class="img-itself"/>
+    <div class="img-caption">長野県山岳総合センターの低酸素テント（HYPOXICO社エヴェレストサミットII）</div>
+</div>
 
 
 
@@ -479,11 +415,9 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 
 
 
-
-
-<img src="/blog_img/lenin-doc/hypoxic-chamber.JPG" alt="Lenin Peak view from BC" width="60%" />
-
-<div style="text-align: center;">長野県山岳総合センターの低酸素テント（HYPOXICO社エヴェレストサミットII）</div>
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/bc_end.jpg" alt="Complete the expedition" width="47%" class="img-itself img-itself-v"/>
+</div>
 
 
 
@@ -532,12 +466,10 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 - BCやC1に戻って本格的な回復はとらなかった
 
 
-
-<img src="/blog_img/lenin-doc/schedule.png" alt="Lenin Peak view from BC" width="80%" />
-
-<div style="text-align: center;">工程表</div>
-
-
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/schedule.png" alt="Lenin Peak view from BC" width="80%" class="img-itself"/>
+    <div class="img-caption">工程表</div>
+</div>
 
 
 
@@ -633,9 +565,11 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 
 
 
+<div class="img-block">
+    <img src="/blog_img/lenin-doc/ending.JPG" alt="Plato" width="66%" class="img-itself"/>
+</div>
 
 
-<img src="/blog_img/lenin-doc/ending.JPG" alt="Plato" width="66%" />
 
 
 
@@ -645,8 +579,7 @@ C3からBCまでは、お昼をとったりザイルパートナーを探した�
 
 ### 書籍
 
-『登山の運動生理学とトレーニング学』（山本正嘉） https://amzn.asia/d/9MSZCwO
-
+[『登山の運動生理学とトレーニング学』（山本正嘉）](https://amzn.asia/d/9MSZCwO)
 
 
 ### リンク

@@ -5,16 +5,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   app: {
     head: {
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      charset: 'utf-16',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
       title: 'keblog',
       link: [
-        { rel: 'canonical', href: 'xxx'},
+      //  { rel: 'canonical', href: 'xxx'},
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width,initial-scale=1'},
-        { name: 'description', content: 'xxxxxxxxxxxxxx'},
+        { name: 'description', content: 'This is keblog.'},
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
       ],
     }
@@ -34,6 +34,8 @@ export default defineNuxtConfig({
   ],
   css: [
     '/assets/scss/global.scss',
+    '/assets/scss/article.scss',
+//    '/assets/scss/typora-base.scss',
     '@mdi/font/css/materialdesignicons.min.css',
   ],
   googleFonts: {

@@ -22,7 +22,7 @@ const props = defineProps(['postlist'])
 <style lang="scss" scoped>
 .index-container {
     display: block;
-    margin-bottom: 13.7px;
+    margin-bottom: 19.7px;
 
     .index-link {
         display: block;

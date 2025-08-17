@@ -8,6 +8,7 @@
           </v-main>
         </v-col>
       </v-row>
+      <AppFooter />
   </v-app>
 </template>
 

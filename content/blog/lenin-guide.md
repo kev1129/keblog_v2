@@ -1,5 +1,5 @@
 ---
-title: "レーニン峰登山ガイド｜アクセス・装備・費用から高所順応まで全まとめ"
+title: "レーニン峰 登山ガイド｜アクセス・装備・費用から高所順応まで全まとめ"
 description: "ページの説明"
 navigation: true
 draft: false
@@ -8,78 +8,6 @@ tags:
   - Mountain
   - Expedition
 ---
-
-# レーニン峰登山ガイド｜アクセス・装備・費用から高所順応まで全まとめ 
-
-- [レーニン峰登山ガイド｜アクセス・装備・費用から高所順応まで全まとめ](#レーニン峰登山ガイドアクセス装備費用から高所順応まで全まとめ)
-  - [はじめに](#はじめに)
-    - [この記事の目的と対象読者](#この記事の目的と対象読者)
-    - [簡単な自己紹介](#簡単な自己紹介)
-    - [注意事項・免責事項](#注意事項免責事項)
-  - [レーニン峰とは？](#レーニン峰とは)
-    - [山域概要](#山域概要)
-    - [シーズンと天候](#シーズンと天候)
-    - [歴史と山の名称](#歴史と山の名称)
-      - [歴史](#歴史)
-      - [名称](#名称)
-    - [7000m峰入門に適している理由](#7000m峰入門に適している理由)
-    - [登頂率・敗退要因・求められる経験と体力](#登頂率敗退要因求められる経験と体力)
-      - [登頂率と主な敗退要因](#登頂率と主な敗退要因)
-      - [その他のリスク](#その他のリスク)
-      - [求められる経験・体力](#求められる経験体力)
-    - [登山者の傾向](#登山者の傾向)
-  - [登山準備の全体像](#登山準備の全体像)
-    - [登山準備](#登山準備)
-    - [実務系](#実務系)
-  - [費用の内訳](#費用の内訳)
-    - [単価のイメージ（参考）](#単価のイメージ参考)
-      - [渡航・国内移動](#渡航国内移動)
-      - [滞在・食事・通信](#滞在食事通信)
-      - [登山関連費用](#登山関連費用)
-      - [装備・準備関連](#装備準備関連)
-  - [アクセス](#アクセス)
-    - [基本ルート](#基本ルート)
-    - [ビシュケク → オシュ タクシー情報](#ビシュケク--オシュ-タクシー情報)
-    - [FRUまでのフライトと荷物について](#fruまでのフライトと荷物について)
-  - [エージェント選びと許認可](#エージェント選びと許認可)
-    - [エージェントについて](#エージェントについて)
-    - [許認可について](#許認可について)
-  - [モデルスケジュールとルート・キャンプサイト情報（ノーマルルート）](#モデルスケジュールとルートキャンプサイト情報ノーマルルート)
-    - [キャンプサイト概要](#キャンプサイト概要)
-    - [ルート区間と所要時間](#ルート区間と所要時間)
-    - [モデルスケジュール](#モデルスケジュール)
-  - [タクティクスの選択肢](#タクティクスの選択肢)
-    - [登山ルートの紹介・ルート選択](#登山ルートの紹介ルート選択)
-    - [荷揚げの選択肢（ノーマルルート）](#荷揚げの選択肢ノーマルルート)
-    - [高所順応](#高所順応)
-      - [ノーマルルートでの具体的な順応プロセス](#ノーマルルートでの具体的な順応プロセス)
-      - [プレ高所順応](#プレ高所順応)
-    - [氷河（クレバス帯）での行動ポイント](#氷河クレバス帯での行動ポイント)
-  - [装備・日本の冬山との違い](#装備日本の冬山との違い)
-    - [衣類・生活系](#衣類生活系)
-    - [ギア系](#ギア系)
-    - [その他](#その他)
-  - [食糧と水](#食糧と水)
-    - [BC ~C1では食堂の利用可能](#bc-c1では食堂の利用可能)
-    - [現地のスーパーで調達できるもの・できないもの](#現地のスーパーで調達できるものできないもの)
-    - [水について](#水について)
-  - [保険について](#保険について)
-  - [登山中の水・電気・通信・天気予報](#登山中の水電気通信天気予報)
-    - [電気・通信](#電気通信)
-    - [天気予報](#天気予報)
-  - [キルギスでの生活・観光](#キルギスでの生活観光)
-    - [お金について](#お金について)
-    - [移動手段](#移動手段)
-  - [参考資料とリンク集](#参考資料とリンク集)
-    - [全体・概要](#全体概要)
-    - [ルート情報](#ルート情報)
-    - [装備関連](#装備関連)
-    - [その他参考リンク](#その他参考リンク)
-
-
--------------------
-
-
 
 ## はじめに
 
@@ -113,8 +41,6 @@ tags:
 
 
 
--------
-
 ### 簡単な自己紹介
 
 26歳。高校時代に友人とテント泊で八ヶ岳を縦走したことをきっかけに、登山の面白さに目覚めました。
@@ -126,14 +52,12 @@ tags:
 現在はフリークライミングに魅了され、岩場での時間を楽しんでいます。
 
 
-
-<img src="/blog_img/lenin-guide/peak-selfy.JPG" alt="Lenin Peak view from BC" width="50%" />
-
-
-
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/peak-selfy.JPG" alt="Lenin Peak view from BC" width="50%" class="img-itself"/>
+</div>
 
 
-------------
+
 
 ### 注意事項・免責事項
 
@@ -150,13 +74,10 @@ tags:
 なお、本記事の本文は情報整理と解説のため、簡潔さを優先して言い切り調で記述しています。
 
 
-
-
-
-<img src="/blog_img/lenin-guide/lenin_from_bc.JPG" alt="Lenin Peak view from BC" width="94%" />
-
-<div style="text-align: center;">BCから望むレーニン峰</div>
-
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/lenin_from_bc.JPG" alt="Lenin Peak view from BC" width="94%" class="img-itself"/>
+  <div class="img-caption">BCから望むレーニン峰</div>
+</div>
 
 
 
@@ -173,10 +94,10 @@ tags:
 
 
 
-<img src="/blog_img/lenin-guide/map_lenin-location.png" alt="location of Lenin Peak" width="88%" />
-
-<div style="text-align: center;">レーニン峰の位置</div>
-
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/map_lenin-location.png" alt="location of Lenin Peak" width="88%" class="img-itself"/>
+  <div class="img-caption">レーニン峰の位置</div>
+</div>
 
 
 
@@ -190,10 +111,10 @@ tags:
 
 
 
-
-<img src="/blog_img/lenin-guide/lenin _south-side.JPG" alt="south side of Lenin from Razdelnaya Peak" width="88%" />
-
-<div style="text-align: center;">ラズデルナヤピークから望める険しい南側の山容</div>
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/lenin _south-side.JPG" alt="south side of Lenin from Razdelnaya Peak" width="88%" class="img-itself"/>
+  <div class="img-caption">ラズデルナヤピークから望める険しい南側の山容</div>
+</div>
 
 
 
@@ -215,9 +136,10 @@ tags:
 
 
 
-<img src="/blog_img/lenin-guide/weather_gas.JPG" alt="Often getting foggy" width="80%" />
-
-<div style="text-align: center;">午後は頻繁にガスる</div>
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/weather_gas.JPG" alt="Often getting foggy" width="80%" class="img-itself" />
+  <div class="img-caption">午後は頻繁にガスる</div>
+</div>
 
 
 
@@ -281,10 +203,14 @@ tags:
 - ノーマルルートでも雪崩リスクがあり、雪崩地形やデブリ帯を通過する箇所がある
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/avalanch-shellac.JPG" alt="Often getting foggy" width="80%" class="img-itself"/>
+  <div class="img-caption">レーニン峰北面、雪崩やセラック</div>
+</div>
 
-<img src="/blog_img/lenin-guide/avalanch-shellac.JPG" alt="Often getting foggy" width="80%" />
 
-<div style="text-align: center;">レーニン峰北面、雪崩やセラック</div>
+
+
 
 
 
@@ -324,8 +250,6 @@ tags:
 
 
 
----------
-
 ### 登山準備
 
 - **情報収集**： ブログや遠征記録で全体像を把握し、工程やルートのイメージを固める。
@@ -347,7 +271,6 @@ tags:
 
 
 
-------------
 
 ### 実務系
 
@@ -398,7 +321,6 @@ tags:
 
 
 
------------
 
 ### 単価のイメージ（参考）
 
@@ -443,7 +365,6 @@ tags:
 - **事前トレーニング・準備費用**：個人差あり（ジム利用料、交通費など）
 
 
-
 ※ポーター費用の目安として以下参考サイトを参照
 [Central Asia Travel - Lenin Peak Expedition Price](https://www.centralasia-travel.com/en/expeditions/lenin/price?utm_source=chatgpt.com)
 
@@ -475,14 +396,12 @@ tags:
 
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/Osh-BC.JPG" alt="transportation from Bishk to Osh" width="80%" class="img-itself"/>
+  <div class="img-caption">オシュ〜BCはシャトルバスで移動</div>
+</div>
 
-<img src="/blog_img/lenin-guide/Osh-BC.JPG" alt="transportation from Bishk to Osh" width="80%" />
 
-<div style="text-align: center;">オシュ〜BCはシャトルバスで移動</div>
-
-
-
-------
 
 ### ビシュケク → オシュ タクシー情報
 
@@ -494,15 +413,12 @@ tags:
 
 
 
-<img src="/blog_img/lenin-guide/Bishkek-Osh.JPG" alt="transportation from Bishk to Osh" width="80%" />
-
-<div style="text-align: center;">ビシュケク〜オシュへの移動風景</div>
-
-
-
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/Bishkek-Osh.JPG" alt="transportation from Bishk to Osh" width="80%" class="img-itself"/>
+  <div class="img-caption">ビシュケク〜オシュへの移動風景</div>
+</div>
 
 
-------
 
 ### FRUまでのフライトと荷物について
 
@@ -546,16 +462,14 @@ tags:
 - ITMC Travel
 
 
-
-<img src="/blog_img/lenin-guide/BC-scenery.JPG" alt="BC" width="80%" />
-
-<div style="text-align: center;">BCの様子</div>
-
-
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/BC-scenery.JPG" alt="BC" width="80%" class="img-itself"/>
+  <div class="img-caption">BCの様子</div>
+</div>
 
 
 
-------
+
 
 ### 許認可について
 
@@ -576,13 +490,11 @@ tags:
 
 ## モデルスケジュールとルート・キャンプサイト情報（ノーマルルート）
 
-ルートやキャンプ地がひと目でわかるわかりやすい地図は、以下のリンクから確認できる；
-
- https://www.centralasia-travel.com/en/expeditions/lenin/maps
-
+わかりやすいノーマルルートの概念図URL： 
+https://www.centralasia-travel.com/en/expeditions/lenin/maps
 
 
-------
+
 
 ### キャンプサイト概要
 
@@ -603,7 +515,7 @@ tags:
 
 
 
-------
+
 
 ### ルート区間と所要時間
 
@@ -621,14 +533,15 @@ tags:
 - クレバスや雪崩などの状況で毎年変動がある。
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/routes.JPG" alt="climbing routes of north side of Lenin Peak" width="80%" class="img-itself"/>
+  <div class="img-caption">Central Asic Travelのルート図、HPから確認できる</div>
+</div>
 
-<img src="/blog_img/lenin-guide/routes.JPG" alt="climbing routes of north side of Lenin Peak" width="80%" />
-
-<div style="text-align: center;">Central Asic Travelのルート図、HPから確認できる</div>
 
 
 
-------
+
 
 ### モデルスケジュール
 
@@ -641,10 +554,12 @@ tags:
 ＊記録用紙を紛失してしまい、見ずらい画像しかなく申し訳ありません。
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/schedule.png" alt="レーニン峰の写真" width="77%" class="img-itself"/>
+  <div class="img-caption">工程表</div>
+</div>
 
-<img src="/blog_img/lenin-guide/schedule.png" alt="レーニン峰の写真" width="77%" />
 
-<div style="text-align: center;">工程表</div>
 
 
 
@@ -656,9 +571,7 @@ tags:
 
 BC がある北側には、代表的なルートが3つある。
 
-ノーマルルートの詳細は、以下のサイトで分かりやすく紹介されている：
-
-[PhotoTravel |レーニン峰のルート説明](https://www.phototravel.dp.ua/14-useful/378-lenin-peak-route.html)
+ノーマルルートの詳細は次のサイトに詳しい：[PhotoTravel |レーニン峰のルート説明](https://www.phototravel.dp.ua/14-useful/378-lenin-peak-route.html)
 
 
 
@@ -670,14 +583,17 @@ BC がある北側には、代表的なルートが3つある。
 
 
 
-<img src="/blog_img/lenin-guide/Wiki_Lenin_Peak_routes.jpg" alt="レーニン峰の写真" width="100%" />
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/Wiki_Lenin_Peak_routes.jpg" alt="レーニン峰の写真" width="100%" class="img-itself"/>
+</div>
+
+
 
 **レーニン峰のルート図** | © Wikimedia Commons / Public Domain
 画像リンク：https://en.wikipedia.org/wiki/File:Wiki_Lenin_Peak_routes.jpg
 
 
 
------------
 
 ### 荷揚げの選択肢（ノーマルルート）
 
@@ -692,8 +608,6 @@ BC がある北側には、代表的なルートが3つある。
  保管にはダッフルバッグや土嚢袋、厚手のビニール袋などが便利。
 
 
-
--------------
 
 ### 高所順応
 
@@ -753,11 +667,12 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/crossing-crevasse.JPG" alt="crossing crevasse" width="60%" class="img-itself"/>
+  <div class="img-caption">C1-C2大きなクレバスを通過するザイルパートナー</div>
+</div>
 
 
-<img src="/blog_img/lenin-guide/crossing-crevasse.JPG" alt="crossing crevasse" width="60%" />
-
-<div style="text-align: center;">C1-C2大きなクレバスを通過するザイルパートナー</div>
 
 
 
@@ -773,7 +688,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
---------------
 
 ### 衣類・生活系
 
@@ -788,7 +702,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
------------------
 
 ### ギア系
 
@@ -799,8 +712,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 - **ビーコン**：　正直迷うところだが、今回は持っていかなかった。
 
 
-
-----------
 
 ### その他
 
@@ -831,14 +742,14 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 * 食堂の食事は美味しい反面、オイリーな料理が多いので、量や内容を工夫すると胃の負担が軽くなる。
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/agent-foods.png" alt="Agent foods" width="64%" class="img-itself"/>
+  <div class="img-caption">BCとC1の食堂にて</div>
+</div>
 
-<img src="/blog_img/lenin-guide/agent-foods.png" alt="Agent foods" width="64%" />
-
-<div style="text-align: center;">BCとC1の食堂にて</div>
 
 
 
------------
 
 ### 現地のスーパーで調達できるもの・できないもの 
 
@@ -852,27 +763,20 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/globus.jpg" alt="globus shoppng" width="80%" class="img-itself"/>
+  <div class="img-caption">オシュのGLOBUSでの買い物</div>
+</div>
 
 
-<img src="/blog_img/lenin-guide/globus.jpg" alt="globus shoppng" width="80%" />
-
-<div style="text-align: center;">オシュのGLOBUSでの買い物</div>
-
-
-
-
-
-<img src="/blog_img/lenin-guide/rations.jpg" alt="rations from japan" width="80%" />
-
-<div style="text-align: center;">日本から持っていった行動食（スニッカーズとナッツ、レーズンは現地調達できた）</div>
+<div class="img-block">
+  <img src="/blog_img/lenin-guide/rations.jpg" alt="rations from japan" width="80%" class="img-itself"/>
+  <div class="img-caption"> class="img-caption"日本から持っていった行動食（スニッカーズとナッツ、レーズンは現地調達できた）</div>
+</div>
 
 
 
 
-
-
-
----------
 
 ### 水について
 
@@ -917,8 +821,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
------------------
-
 ### 電気・通信
 
 - **BC（ベースキャンプ）**
@@ -940,16 +842,15 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
-----------
 
 ### 天気予報
 
-- **[Mountain Forecast](https://www.mountain-forecast.com/peaks/Pik-Lenin/forecasts/7134) **
+- [Mountain Forecast](https://www.mountain-forecast.com/peaks/Pik-Lenin/forecasts/7134) 
   - 標高別予報が確認可能
   - ネット環境がなくても、最後に読み込んだ予報をオフラインで表示できる
   - 無料：6日分の予報
   - 有料（月600円）：12日分の予報（遠征時にサブスク推奨）
-- **C2以降**（ネット環境なし）
+- C2以降（ネット環境なし）
   - キャンプマネージャーから天気情報を取得
 
 
@@ -965,7 +866,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
-----------------
 
 ### 移動手段
 
@@ -981,13 +881,12 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 ### 全体・概要
 
 - [Solo ascent guide](https://www.phototravel.dp.ua/en/travels/climbs/892-lenin-peak-preparation-en.html#google_vignette)：　 英語圏（特にヨーロッパ）向けに必要な情報が網羅されている。
-- [Lenin Peak - UIAA](https://www.theuiaa.org/mountain-medicine/lenin-peak/#:~:text=The peak climbing season is,has the most rainy days.)：　UIAAによる信頼性の高い基本情報。
+- [Lenin Peak - UIAA](https://www.theuiaa.org/mountain-medicine/lenin-peak/)：　UIAAによる信頼性の高い基本情報。
 - [SummitPost | Pik Lenin](https://www.summitpost.org/pik-lenin/150355)：　アクセス等の基本情報および登山者の記録。
 - [『中央アジアの高峰』](https://www.yunnan-k.jp/images/stories/20211218_54/03-kondo/参考資料2ー限りなき山行第1回第14回_登山時報No.527-2019-01-No.541-2020-03.pdf)：　中央アジアの概念図や高峰の山々を把握できる資料。
 
 
 
-------------
 
 ### ルート情報
 
@@ -998,7 +897,7 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
--------------
+
 
 ### 装備関連
 
@@ -1007,7 +906,6 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 
 
-----------------
 
 ### その他参考リンク
 

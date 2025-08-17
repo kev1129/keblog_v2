@@ -1,0 +1,625 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>Lenin blog guide</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='レーニン峰登山ガイド｜行き方装備費用から高所順応まで全まとめ'><span>レーニン峰登山ガイド｜行き方・装備・費用から高所順応まで全まとめ </span></h1><p>&nbsp;</p><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n64"><a class="md-toc-inner" href="#レーニン峰登山ガイド｜行き方装備費用から高所順応まで全まとめ">レーニン峰登山ガイド｜行き方・装備・費用から高所順応まで全まとめ </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n440"><a class="md-toc-inner" href="#はじめに">はじめに</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n2123"><a class="md-toc-inner" href="#この記事の目的と対象読者">この記事の目的と対象読者</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n477"><a class="md-toc-inner" href="#簡単な自己紹介">簡単な自己紹介</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n470"><a class="md-toc-inner" href="#注意事項免責事項">注意事項・免責事項</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n555"><a class="md-toc-inner" href="#レーニン峰とは">レーニン峰とは？</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n573"><a class="md-toc-inner" href="#山域概要">山域概要</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n579"><a class="md-toc-inner" href="#シーズンと天候">シーズンと天候</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6733"><a class="md-toc-inner" href="#歴史と山の名称">歴史と山の名称</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n621"><a class="md-toc-inner" href="#歴史">歴史</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n637"><a class="md-toc-inner" href="#名称">名称</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n592"><a class="md-toc-inner" href="#7000m峰入門に適している理由">7000m峰入門に適している理由</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n746"><a class="md-toc-inner" href="#登頂率敗退要因求められる経験と体力">登頂率・敗退要因・求められる経験と体力</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n2544"><a class="md-toc-inner" href="#登頂率と主な敗退要因">登頂率と主な敗退要因</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n2570"><a class="md-toc-inner" href="#その他のリスク">その他のリスク</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n2571"><a class="md-toc-inner" href="#求められる経験体力">求められる経験・体力</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6740"><a class="md-toc-inner" href="#登山者の傾向">登山者の傾向</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n2877"><a class="md-toc-inner" href="#登山準備の全体像">登山準備の全体像</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6743"><a class="md-toc-inner" href="#登山準備">登山準備</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n2883"><a class="md-toc-inner" href="#実務系">実務系</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n864"><a class="md-toc-inner" href="#費用の内訳">費用の内訳</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3306"><a class="md-toc-inner" href="#単価のイメージ参考">単価のイメージ（参考）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n3311"><a class="md-toc-inner" href="#渡航国内移動">渡航・国内移動</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n3319"><a class="md-toc-inner" href="#滞在食事通信">滞在・食事・通信</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n3327"><a class="md-toc-inner" href="#登山関連費用">登山関連費用</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n3335"><a class="md-toc-inner" href="#装備準備関連">装備・準備関連</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3479"><a class="md-toc-inner" href="#アクセス">アクセス</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3480"><a class="md-toc-inner" href="#基本ルート">基本ルート</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3503"><a class="md-toc-inner" href="#ビシュケク-→-オシュ-タクシー情報">ビシュケク → オシュ タクシー情報</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3532"><a class="md-toc-inner" href="#fruまでのフライトと荷物について">FRUまでのフライトと荷物について</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3677"><a class="md-toc-inner" href="#エージェント選びと許認可">エージェント選びと許認可</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3678"><a class="md-toc-inner" href="#エージェントについて">エージェントについて</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3712"><a class="md-toc-inner" href="#許認可について">許認可について</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n430"><a class="md-toc-inner" href="#モデルスケジュールとルートキャンプサイト情報ノーマルルート">モデルスケジュールとルート・キャンプサイト情報（ノーマルルート）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4093"><a class="md-toc-inner" href="#キャンプサイト概要">キャンプサイト概要</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1402"><a class="md-toc-inner" href="#ルート区間と所要時間">ルート区間と所要時間</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3893"><a class="md-toc-inner" href="#モデルスケジュール">モデルスケジュール</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1458"><a class="md-toc-inner" href="#タクティクスの選択肢">タクティクスの選択肢</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1618"><a class="md-toc-inner" href="#登山ルートの紹介ルート選択">登山ルートの紹介・ルート選択</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1478"><a class="md-toc-inner" href="#荷揚げの選択肢ノーマルルート">荷揚げの選択肢（ノーマルルート）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4543"><a class="md-toc-inner" href="#高所順応">高所順応</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n4769"><a class="md-toc-inner" href="#ノーマルルートでの具体的な順応プロセス">ノーマルルートでの具体的な順応プロセス</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n4783"><a class="md-toc-inner" href="#プレ高所順応">プレ高所順応</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4290"><a class="md-toc-inner" href="#氷河クレバス帯での行動ポイント">氷河（クレバス帯）での行動ポイント</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5112"><a class="md-toc-inner" href="#装備日本の冬山との違い">装備・日本の冬山との違い</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5375"><a class="md-toc-inner" href="#衣類生活系">衣類・生活系</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5420"><a class="md-toc-inner" href="#ギア系">ギア系</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5407"><a class="md-toc-inner" href="#その他">その他</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5128"><a class="md-toc-inner" href="#食糧と水">食糧と水</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5132"><a class="md-toc-inner" href="#bc-~c1では食堂の利用可能">BC ~C1では食堂の利用可能</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5169"><a class="md-toc-inner" href="#現地のスーパーで調達できるものできないもの">現地のスーパーで調達できるもの・できないもの </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6694"><a class="md-toc-inner" href="#水について">水について</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1833"><a class="md-toc-inner" href="#保険について">保険について</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n6559"><a class="md-toc-inner" href="#登山中の水電気通信天気予報">登山中の水・電気・通信・天気予報</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6563"><a class="md-toc-inner" href="#電気通信">電気・通信</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6703"><a class="md-toc-inner" href="#天気予報">天気予報</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1939"><a class="md-toc-inner" href="#キルギスでの生活観光">キルギスでの生活・観光</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5006"><a class="md-toc-inner" href="#お金について">お金について</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6710"><a class="md-toc-inner" href="#移動手段">移動手段</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1880"><a class="md-toc-inner" href="#参考資料とリンク集">参考資料とリンク集</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5068"><a class="md-toc-inner" href="#全体概要">全体・概要</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5079"><a class="md-toc-inner" href="#ルート情報">ルート情報</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n6723"><a class="md-toc-inner" href="#装備関連">装備関連</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5097"><a class="md-toc-inner" href="#その他参考リンク">その他参考リンク</a></span></p></div><p>&nbsp;</p><hr /><p>&nbsp;</p><h2 id='はじめに'><span>はじめに</span></h2><h3 id='この記事の目的と対象読者'><span>この記事の目的と対象読者</span></h3><p>&nbsp;</p><p><span>2025年7月、レーニン峰（Lenin Peak）に登った経験をもとに、「行くかどうかの検討」から「計画の段階」で欲しかった情報を整理しました。</span></p><p><span>かつては日本人にも人気の山だったようですが、日本語で調べてもまとまった情報を得にくく、日本語・英語・ロシア語のさまざまなサイトを参照する必要がありました。実際、私が山にいた2週間、日本人には一人も会いませんでした。</span></p><p><span>とはいえ、実際に登ってみて、初めての7000m峰として非常に挑戦しやすく、大きすぎないステップアップとして、とても良い山だと感じました。</span></p><p><span>現状、日本からの登山者は多くなさそうな印象です。そのため、今後もまとまった情報が出てくる可能性は低いと考え、「検討〜計画段階で欲しかった」という視点を軸に、収集した情報に自身の経験を織り交ぜながら整理しました。</span></p><p><span>なお、今回の登山ではおおよそ次のようなスタイルを取りました。</span></p><p>&nbsp;</p><ul><li><p><span>ノーマルルート</span></p></li><li><p><span>ガイドを付けず単独で行動</span></p></li><li><p><span>できるだけ自力で完結する形を目指し、ポーターや常設テントといったサービスは利用しない</span></p></li></ul><p>&nbsp;</p><p><span>できる限り幅広いスタイルを想定して情報をまとめたつもりですが、特に同様のスタイルを目指す人には、実践的な内容になっていると思います。</span></p><p><span>検討・計画のための情報収集が楽になり、より実際的な準備や山行そのものに集中できる助けになれば幸いです。</span></p><p>&nbsp;</p><hr /><h3 id='簡単な自己紹介'><span>簡単な自己紹介</span></h3><p>&nbsp;</p><p><span>26歳。高校時代に友人とテント泊で八ヶ岳を縦走したことをきっかけに、登山の面白さに目覚めました。</span></p><p><span> 大学では、約一年と短いながら探検部に所属し、沢登りや冬季含む縦走・岩稜の登攀などを経験。</span></p><p><span> 2025年、社会人生活に一度区切りをつけ、春のネパールのアイランドピーク（Island Peak）に登頂。続けて夏にはパミール高原に渡り、レーニン峰に挑戦しました。</span></p><p><span> 現在はフリークライミングに魅了され、岩場での時間を楽しんでいます。</span></p><p>&nbsp;</p><hr /><h3 id='注意事項免責事項'><span>注意事項・免責事項</span></h3><p>&nbsp;</p><p><span>ここに掲載している内容は、ノーマルルートから挑戦するにあたって、あくまで一個人の経験と、その際に集めた情報をもとに整理したものです。</span></p><p><span> 本記事は、完全な情報源でも、登山における完璧なガイダンスでもありません。あくまでも「参考資料」としてご覧ください。</span></p><p><span>レーニン峰は「7000m入門」とも言われる山ですが、それでも毎年のように死亡事故が発生しています。天候やルート状況、体調、判断ミスなど、ほんの少しの要因が命に関わるリスクに直結します。</span></p><p><span>登るかどうかを検討する段階でも、こうした情報が判断材料の一部になれば幸いですが、経験や知識に不安がある場合は、信頼できるエージェントのガイド付きパッケージを利用するなど、適切な選択を行ってください。</span></p><p><span>安全と無事を何よりも優先し、無理のない登山を計画されることを願っています。</span></p><p><span>なお、本記事の本文は情報整理と解説のため、簡潔さを優先して言い切り調で記述しています。</span></p><p>&nbsp;</p><p>&nbsp;</p><p><img src="./images/lenin_from_bc.JPG" alt="Lenin Peak view from BC" width="94%" /></p><div style="text-align: center;">BCから望むレーニン峰、BC入り</div><p>&nbsp;</p><p>&nbsp;</p><h2 id='レーニン峰とは'><span>レーニン峰とは？</span></h2><h3 id='山域概要'><span>山域概要</span></h3><p><span>中央アジアに広がる平均標高約5000mのパミール高原（「世界の屋根」とも呼ばれる）の西部、トランスアライ山脈に位置する標高7134mの山。</span></p><p><span>パミール高原は、ヒマラヤ、カラコルム、天山、ヒンドゥークシュなどの巨大な山脈の交差点。</span></p><p><span>レーニン峰はキルギスタンとタジキスタンの国境にあり、中央アジアで最も高い山の一つに数えられる。</span></p><p>&nbsp;</p><p><img src="./images/map_lenin-location.png" alt="location of Lenin Peak" width="88%" /></p><div style="text-align: center;">レーニン峰の位置</div><p>&nbsp;</p><p>&nbsp;</p><p><span>レーニン峰へのルートは、キルギス側（北面）が主流で、アプローチは良好。</span></p><p><span>一方、タジキスタン側（南面）のルート情報は簡単に調べた範囲では見つからず。</span></p><p><span>アクセスの困難さや地形の険しさから、南面からの挑戦が少ないものと推測される。</span></p><p>&nbsp;</p><p><img src="./images/lenin _south-side.JPG" alt="south side of Lenin from Razdelnaya Peak" width="88%" /></p><div style="text-align: center;">ラズデルナヤピークから望める険しい南側の山容</div><p>&nbsp;</p><hr /><h3 id='シーズンと天候'><span>シーズンと天候</span></h3><p>&nbsp;</p><p><span>登山のベストシーズンは7月から8月で、この時期は気候も比較的安定している。</span></p><p><span>冬季の登頂は非常に厳しく、過酷な気象条件のため成功例は少ない。</span></p><p>&nbsp;</p><ul><li><p><span>強風が特徴。キャンプ3（C3）からピーク間の稜線では、時に30～50km/hの強風が吹くことがある。</span></p></li><li><p><span>午後から深夜にかけてホワイトアウトになることが多かった。</span></p></li><li><p><span>日照時間は、朝6時から夕方20時頃までと長い。</span></p></li><li><p><span>昼夜の温度差が大きく、陽が出ていると熱中症の危険があるほど。休息日の日中は、暑さで寝付けないことがほとんどだった。</span></p></li><li><p><span>標高4000m以下では、頻繁に雨に降られた。</span></p></li></ul><p>&nbsp;</p><p><img src="./images/weather_gas.JPG" alt="Often getting foggy" width="80%" /></p><div style="text-align: center;">午後は頻繁にガスる</div><p>&nbsp;</p><hr /><h3 id='歴史と山の名称'><span>歴史と山の名称</span></h3><h4 id='歴史'><span>歴史</span></h4><ul><li><p><span>1928年：初登頂に成功。</span></p></li><li><p><span>1987年：スピード記録達成。C1とピーク間を12時間で往復。</span></p></li><li><p><span>1988年：冬季初登頂。</span></p></li><li><p><span>1991年：冬季の2度目の登頂。</span></p></li></ul><p>&nbsp;</p><h4 id='名称'><span>名称</span></h4><ul><li><p><span>キルギス国内および国際的には、「Lenin Peak / Mt. Lenin / Pik Lenin（レーニン峰）」と呼ばれる。</span></p></li><li><p><span>タジキスタンでは公式に「Abu Ali Ibn Sina Peak（イブン・シーナ峰）」という名称が使われている。</span></p></li><li><p><span>古称は「Mt. Kaufmann（カウフマン峰）」で、1928年にレーニン峰へと改名された。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='7000m峰入門に適している理由'><span>7000m峰入門に適している理由</span></h3><p>&nbsp;</p><p><span>レーニン峰は、スパンティク（Spantik）やハン・テングリ（Khan Tengri）と並び、技術的な易しさとアプローチの良さから、7000m峰入門として広く知られる山。以下は、私が個人的に「挑戦しやすい」と感じた点。</span></p><p>&nbsp;</p><ul><li><p><strong><span>技術的ハードルの低さ</span></strong><span>：ノーマルルートはほぼ歩きのみで、登攀要素なし。</span></p></li><li><p><strong><span>比較的安価</span></strong><span>：ツアーパッケージは400〜数千USD。渡航費や保険などを含めた総額は30〜50万円程度（スタイルによって変動）。</span></p></li><li><p><strong><span>登山期間</span></strong><span>：約 20日（1 - 3週間）</span></p></li><li><p><strong><span>アプローチの良さ</span></strong><span>：BC, 3700mまで車で移動可能。</span></p></li><li><p><strong><span>許可関連のハードルの低さ</span></strong><span>：登山許可証は不要。ガイドなしやソロでも挑戦可能（詳細は後述）。</span></p></li><li><p><strong><span>登山者の多さによるインフラの充実</span></strong></p><ul><li><p><span>ルート整備や道標、トレースが整っている。</span></p></li><li><p><span>C3やC4までポーター利用可能。</span></p></li><li><p><span>有事の際のレスキュー体制。</span></p></li><li><p><span>BCの快適性（電気、トイレ、シャワー、Wi-Fiなど）。</span></p></li></ul></li></ul><p>&nbsp;</p><hr /><h3 id='登頂率敗退要因求められる経験と体力'><span>登頂率・敗退要因・求められる経験と体力</span></h3><h4 id='登頂率と主な敗退要因'><span>登頂率と主な敗退要因</span></h4><p><span>レーニン峰の登頂率は、およそ </span><strong><span>10〜20％</span></strong><span>。</span>
+<span> 敗退の理由として多いのは、</span><strong><span>高所順応の失敗</span></strong><span>と、特にC3〜ピーク間稜線での</span><strong><span>強風による天候悪化</span></strong><span>。</span></p><p>&nbsp;</p><h4 id='その他のリスク'><span>その他のリスク</span></h4><ul><li><p><span>毎年、クレバス転落事故が発生している</span></p></li><li><p><span>毎年、数名の死者が出ている</span></p></li><li><p><span>ノーマルルートでも雪崩リスクがあり、雪崩地形やデブリ帯を通過する箇所がある</span></p></li></ul><p>&nbsp;</p><p><img src="./images/avalanch-shellac.JPG" alt="Often getting foggy" width="80%" /></p><div style="text-align: center;">レーニン峰北面、雪崩やセラック</div><p>&nbsp;</p><h4 id='求められる経験体力'><span>求められる経験・体力</span></h4><ul><li><p><span>長期間の行動に耐えられる体力</span></p></li><li><p><span>高所（5,000〜6,000m）での登山経験と、高所順応・高山病への理解</span></p></li><li><p><span>雪山での長期テント生活の経験</span></p></li><li><p><span>氷河の行動経験</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='登山者の傾向'><span>登山者の傾向</span></h3><p><span>レーニン峰には、世界各国から多様な背景を持つ登山者が集まる。</span></p><p><span>その目的やスタイルはさまざまだが、実際に会った登山者の傾向をまとめた。</span></p><p>&nbsp;</p><ul><li><p><span>8,000m峰を目指す前のステップアップとして挑戦する人が多い。遠征登山特有の高所順応プロセスや荷上げ、長期山行に慣れるための場として選ばれている。</span></p></li><li><p><span>5,000〜6,000m峰の経験を持つ登山者が多く、ツアーでは6,000m峰登頂経験を推奨条件としている場合がある。</span></p></li><li><p><span>グループ登山、単独行、ポーターやガイドの利用、常設テントの利用など、さまざまなスタイルが可能。多数派は、グループでガイド付き、エージェントの常設テントを利用するスタイル。</span></p></li><li><p><span>装備をすべてBCでレンタルし、常設テントを利用すれば、日常的に山に登っていない人でも、行動力があればバックパック旅行の延長感覚で挑戦できるレベル（とはいえ高所への適応力は必須）。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='登山準備の全体像'><span>登山準備の全体像</span></h2><p><span>レーニン峰のような長期・高所登山では、計画段階から現地入りまでやることが多い。ここでは大きく「登山準備（メイン）」と「実務系」に分けてまとめる。</span></p><p><span>特にエージェントの手配や航空券の確保は早いほど選択肢が広がる。 遅くとも、</span><strong><span>1ヶ月前には準備を固める</span></strong><span>つもりで動くと安心。</span></p><p>&nbsp;</p><hr /><h3 id='登山準備'><span>登山準備</span></h3><ul><li><p><strong><span>情報収集</span></strong><span>： ブログや遠征記録で全体像を把握し、工程やルートのイメージを固める。</span></p></li><li><p><strong><span>ルート選択</span></strong><span>： 自分の経験や日程に合わせたルートを決定。</span></p></li><li><p><strong><span>理想スケジュール作成</span></strong><span>： 所要日数を見積もり、行動計画を組み立てる。</span></p></li><li><p><strong><span>エージェント手配</span></strong><span>（できれば出発の1か月以上前）</span></p><ul><li><p><span>エージェント選定・依頼</span></p></li><li><p><span>必要書類（パスポート、保険証券など）提出</span></p></li><li><p><span>支払い</span></p></li><li><p><span>Osh ⇄ BC の移動日程決定</span></p></li></ul></li><li><p><strong><span>トレーニング</span></strong></p><ul><li><p><span>基礎体力向上</span></p></li><li><p><span>プレ高所順応（任意）</span></p></li></ul></li><li><p><strong><span>イメトレ</span></strong><span>： 想定されるさまざまなケースを事前にシミュレーションしておく。</span></p></li></ul><p>&nbsp;</p><p><em><span>私の場合は思い立ってからの準備だったため、出発2週間前にエージェントへ連絡。返信があったのは1社のみだった。許可証や調整に時間がかかるため、早めの連絡が望ましい。</span></em></p><p>&nbsp;</p><hr /><h3 id='実務系'><span>実務系</span></h3><ul><li><p><strong><span>渡航準備</span></strong></p></li><li><p><strong><span>装備</span></strong></p><ul><li><p><span>リスト作成</span></p></li><li><p><span>不足分を購入するか、現地レンタルするか検討</span></p></li></ul></li><li><p><strong><span>食糧</span></strong></p><ul><li><p><span>食糧計画作成</span></p></li><li><p><span>事前購入または現地購入</span></p></li></ul></li><li><p><strong><span>保険</span></strong><span>：高所登山に対応した保険に申し込み。</span></p></li><li><p><strong><span>両替</span></strong><span>： USDを用意しておく。</span></p></li><li><p><strong><span>宿泊</span></strong><span>：Bishkek、Osh のホテル予約</span></p></li><li><p><strong><span>アプリのダウンロード</span></strong></p><ul><li><p><span>Yandex Go（タクシー配車）</span></p></li><li><p><span>Yandex Maps（バス路線や移動全般）</span></p></li><li><p><span>Weather Forecast（標高別天気）</span></p></li><li><p><span>Google Translate（ロシア語）</span></p></li></ul></li><li><p><strong><span>コンテンツ</span></strong><span>：音楽やNetflixのダウンロード。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='費用の内訳'><span>費用の内訳</span></h2><p><span>今回のレーニン峰登山でかかった総額は </span><strong><span>約30万円</span></strong><span>。</span></p><p><span>ここでは「比較的安価に抑えた場合の一例」として参考にしてほしい。</span></p><p><span>なお、装備はこの遠征以外にも使うため減価償却的な扱い。遠征費用には含めていない。</span></p><p>&nbsp;</p><p><strong><span>レーニン峰登山費用概算</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>項目</span></th><th><span>金額（円）</span></th><th><span>備考</span></th></tr></thead><tbody><tr><td><span>航空券（日本〜キルギス往復）</span></td><td><span>約160,000円</span></td><td><span>預け荷物の超過料金含む</span></td></tr><tr><td><span>国内移動費（ビシュケク〜オシュ往復、その他）</span></td><td><span>約15,000円</span></td><td>&nbsp;</td></tr><tr><td><span>オシュ宿泊費</span></td><td><span>約5,000円</span></td><td><span>1泊1,200円×4泊程度</span></td></tr><tr><td><span>エージェント（登山パーミット＋BCサービス）</span></td><td><span>約60,000円</span></td><td><span>Central Asia Travel Economy</span></td></tr><tr><td><span>食費・行動食</span></td><td><span>約40,000円</span></td><td><span>事前・現地購入</span></td></tr><tr><td><span>SIM・雑費</span></td><td><span>約10,000円</span></td><td><span>SIM、トイレットペーパー、ガス缶 etc.</span></td></tr><tr><td><span>保険（登山対応）</span></td><td><span>約12,000円</span></td><td><span>高所登山対応の海外旅行保険</span></td></tr><tr><td><span>観光</span></td><td><span>約10,000円</span></td><td><span>1週間、アルティンアラシャン</span></td></tr><tr><td><span>合計</span></td><td><strong><span>約302,000円</span></strong></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><hr /><h3 id='単価のイメージ参考'><span>単価のイメージ（参考）</span></h3><p><span>各自のプランでかかる費用を概算しやすいように、各項目の大まかな費用をまとめた。</span></p><p><span>為替レートの変動や価格の改定により金額は変わるため、あくまで2025年の実際の目安として参考にしてほしい。</span></p><p>&nbsp;</p><h4 id='渡航国内移動'><span>渡航・国内移動</span></h4><ul><li><p><strong><span>日本〜ビシュケク往復航空券</span></strong><span>：約70,000円</span></p></li><li><p><strong><span>空港までの国内移動</span></strong><span>：人による（自宅〜空港）</span></p></li><li><p><strong><span>ビシュケク〜オシュ（タクシー）</span></strong><span>：3,000キルギスソム（COM）</span></p></li><li><p><strong><span>オシュ〜ベースキャンプ</span></strong><span>：通常パッケージに含まれる</span></p></li><li><p><strong><span>その他移動</span></strong><span>：ホテルや観光</span></p></li></ul><p>&nbsp;</p><h4 id='滞在食事通信'><span>滞在・食事・通信</span></h4><ul><li><p><strong><span>市内宿泊（オシュ等）</span></strong><span>：約700COM〜</span></p></li><li><p><strong><span>外食・食費（移動中や市内）</span></strong><span>：約300COM〜</span></p></li><li><p><strong><span>SIMカード（無制限・1ヶ月）</span></strong><span>：500COM</span></p></li></ul><p>&nbsp;</p><h4 id='登山関連費用'><span>登山関連費用</span></h4><ul><li><p><strong><span>現地エージェント（Economyクラス）</span></strong><span>：400USD〜</span></p></li><li><p><strong><span>許可証類（登山パーミット等）</span></strong><span>：パッケージに含まれることが多い</span></p></li><li><p><strong><span>ポーター料金</span></strong><span>：エージェントに要確認（kg単位で計算されることが多い）</span></p></li><li><p><strong><span>ガス缶（小）</span></strong><span>：10USD / 本</span></p></li><li><p><strong><span>食糧</span></strong><span>：個人差あり</span></p></li></ul><p>&nbsp;</p><h4 id='装備準備関連'><span>装備・準備関連</span></h4><ul><li><p><strong><span>装備品</span></strong><span>：購入 or レンタル</span></p></li><li><p><strong><span>海外山岳保険（1ヶ月・救援のみ）</span></strong><span>：約12,000円（クレジットカード付帯保険だけでは不十分）</span></p></li><li><p><strong><span>事前トレーニング・準備費用</span></strong><span>：個人差あり（ジム利用料、交通費など）</span></p></li></ul><p>&nbsp;</p><p><span>※ポーター費用の目安として以下参考サイトを参照</span>
+<a href='https://www.centralasia-travel.com/en/expeditions/lenin/price?utm_source=chatgpt.com'><span>Central Asia Travel - Lenin Peak Expedition Price</span></a></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='アクセス'><span>アクセス</span></h2><h3 id='基本ルート'><span>基本ルート</span></h3><p><span>アチクタシュベースキャンプ（BC、標高3700m）へは、オシュ（Osh）からバスかタクシーで移動するのが一般的。</span></p><p><span>日本からキルギスに直接行く場合は、マナス国際空港（FRU）を経由し、キルギスの首都ビシュケク（Bishkek）を経てオシュへ移動することが多い。</span></p><p>&nbsp;</p><ul><li><p><strong><span>ビザ</span></strong><span>：60日以内の滞在であればビザは不要。</span></p></li><li><p><strong><span>FRU → ビシュケク</span></strong><span>：飛行機で約1時間。料金は380〜1（単位が不明ですが恐らく通貨の間違いかと思います）。</span></p></li><li><p><strong><span>ビシュケク → オシュ</span></strong><span>：飛行機またはタクシーが利用可能。</span></p><ul><li><p><span>飛行機：約1時間、料金は120ドル〜（約18,000円）。荷物制限15kgあり。</span></p></li><li><p><span>タクシー：約12時間、3000キルギスソム（約5,000円）。</span></p></li></ul></li><li><p><strong><span>オシュ → BC</span></strong><span>：約6時間。エージェントが運営するシャルトルバスやタクシーの自力手配が可能。</span></p><ul><li><p><span>エージェント利用時は基本パッケージにBCへの移動が含まれることが多い。</span></p></li><li><p><span>エージェントを使わない場合は、オシュでタクシーを手配する必要がある。</span></p></li></ul></li></ul><p>&nbsp;</p><p>&nbsp;</p><p><img src="./images/Osh-BC.JPG" alt="transportation from Bishk to Osh" width="80%" /></p><div style="text-align: center;">オシュ〜BCはシャトルバスで移動</div><p>&nbsp;</p><hr /><h3 id='ビシュケク-→-オシュ-タクシー情報'><span>ビシュケク → オシュ タクシー情報</span></h3><p><span>以前はビシュケク西バスターミナルからOsh行きのタクシーが出ていたが、近年バス停の場所が変更された。</span></p><p><span>私が利用したバス停の位置はこちら（</span><a href='https://maps.app.goo.gl/t7LcLQrbw59ksMYq6'><span>Googleマップリンク</span></a><span>）。宿泊先のホテルや利用するタクシーにOsh行きのバス停を確認すると間違いがない。</span></p><p><span>料金は以前は片道約2000キルギスソムだったが、最近は2500〜3000キルギスソムに値上がりしている。</span></p><p>&nbsp;</p><p><img src="./images/Bishkek-Osh.JPG" alt="transportation from Bishk to Osh" width="80%" /></p><div style="text-align: center;">ビシュケク〜オシュへの移動風景</div><p>&nbsp;</p><p>&nbsp;</p><hr /><h3 id='fruまでのフライトと荷物について'><span>FRUまでのフライトと荷物について</span></h3><p><span>私は成田からLCCのTway航空を利用し、韓国・仁川（ICN）経由でマナス国際空港へ向かった。</span></p><p>&nbsp;</p><ul><li><p><span>LCCは預け荷物の超過料金が高額なので要注意。Twayでは、NRT → ICN → FRU便の超過料金が1kgあたり約2400円だったが、帰国便は1kgあたり24ドルかかった（Twayに問い合わせた際に教えてもらえなかったので情報共有）。</span></p></li><li><p><span>中国経由のフライトでは追加料金なしで約30kgの荷物を預けられる便もあるため、総合的に見るとLCC以外の航空会社利用が安く済む場合もある。</span></p></li><li><p><span>国際輸送業者（日本運送・DHL等）も調べたが、荷物を預けて持っていく方法が最も安く済みそうだった。</span></p></li></ul><p>&nbsp;</p><h2 id='エージェント選びと許認可'><span>エージェント選びと許認可</span></h2><h3 id='エージェントについて'><span>エージェントについて</span></h3><p><span>私は「Central Asia Travel」のEconomyパッケージを利用した（詳細：</span><a href='https://www.centralasia-travel.com/en/expeditions/lenin#eco_bonus' target='_blank' class='url'>https://www.centralasia-travel.com/en/expeditions/lenin#eco_bonus</a><span>）。</span></p><p><span>利用可能なエージェントは複数あり、基本的にシンプルなものからフルサービスまで、いくつかのパッケージが用意されている。</span></p><p><span>「Lenin Peak Agency」等で検索すれば、大方のエージェントは出てくる。</span></p><p>&nbsp;</p><p><span>主なサービス内容は以下の通り：</span></p><ul><li><p><span>オシュ（Osh）からベースキャンプ（BC）までの移動</span></p></li><li><p><span>必要な許可の代行取得</span></p></li><li><p><span>ガイド、ポーター（荷上げ）</span></p></li><li><p><span>常設テント泊、食事、水、電気、Wi-Fi、シャワー、トイレ</span></p></li><li><p><span>医療サービス、荷物保管スペース、装備レンタル　など</span></p></li></ul><p>&nbsp;</p><p><span>代表的なエージェントの例：</span></p><ul><li><p><span>Ak-Sai Travel</span></p></li><li><p><span>Central Asia Travel</span></p></li><li><p><span>Tien Shan Travel</span></p></li><li><p><span>ITMC Travel</span></p></li></ul><p>&nbsp;</p><p><img src="./images/BC-scenery.JPG" alt="BC" width="80%" /></p><div style="text-align: center;">BCの様子</div><p>&nbsp;</p><p>&nbsp;</p><hr /><h3 id='許認可について'><span>許認可について</span></h3><p>&nbsp;</p><ul><li><p><span>登山にあたって必要な許認可や支払いは以下の通り：</span></p><ul><li><p><span>ボーダーゾーンパーミット（Border zone permit／フロンティア許可証）</span></p></li><li><p><span>環境保護税（Environmental tax）</span></p></li></ul></li><li><p><span>ネパールのような登山許可証は不要。</span></p></li><li><p><span>これらの費用や手続きは、通常エージェントが一括して代行してくれる。</span></p></li><li><p><span>登山の約1ヶ月前に、パスポートのコピーをエージェントに送れば手配してくれることが多い。</span></p></li><li><p><span>ベースキャンプ周辺には検問官と思われる人が多数いるが、実際に検問を受けることはなかったし、検問されている人も見かけなかった。エージェントを利用せず、許可証もなしで挑戦する強者もいる様子。</span></p></li><li><p><span>ただし、余計な心配を避けるため、私は必要な許認可は全て用意した。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='モデルスケジュールとルートキャンプサイト情報ノーマルルート'><span>モデルスケジュールとルート・キャンプサイト情報（ノーマルルート）</span></h2><p><span>ルートやキャンプ地がひと目でわかるわかりやすい地図は、以下のリンクから確認できる；</span></p><p><span> </span><a href='https://www.centralasia-travel.com/en/expeditions/lenin/maps' target='_blank' class='url'>https://www.centralasia-travel.com/en/expeditions/lenin/maps</a></p><p>&nbsp;</p><hr /><h3 id='キャンプサイト概要'><span>キャンプサイト概要</span></h3><figure class='table-figure'><table><thead><tr><th>&nbsp;</th><th><span>BC</span></th><th><span>C1</span></th><th><span>C2</span></th><th><span>C3</span></th></tr></thead><tbody><tr><td><span>標高</span></td><td><span>3700 m</span></td><td><span>4400 m</span></td><td><span>5300 m</span></td><td><span>6100 m</span></td></tr><tr><td><span>常設テント</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>◯</span></td></tr><tr><td><span>食堂</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>×</span></td><td><span>×</span></td></tr><tr><td><span>水</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>×</span></td></tr><tr><td><span>WiFi</span></td><td><span>◯</span></td><td><span>◯</span></td><td><span>×</span></td><td><span>×</span></td></tr><tr><td><span>電気</span></td><td><span>◯</span></td><td><span>×</span></td><td><span>×</span></td><td><span>×</span></td></tr></tbody></table></figure><p>&nbsp;</p><ul><li><p><span>キャンプサイトの標高は目安で、エージェントによって多少異なる。</span></p></li><li><p><span>BC周辺の高原は緑が見られるが、以降は荒涼とした氷河地帯となる。</span></p></li><li><p><span>C4（6,400m）が設置される場合もあるが、現在はほとんど使用されていない。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='ルート区間と所要時間'><span>ルート区間と所要時間</span></h3><figure class='table-figure'><table><thead><tr><th><span>区間</span></th><th><span>所用時間</span></th><th><span>FIX箇所</span></th><th><span>一般的な出発時間（理由）</span></th></tr></thead><tbody><tr><td><span>BC - C1</span></td><td><span>6 - 7 時間</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>C1 - C2</span></td><td><span>5 - 6 時間</span></td><td><span>有</span></td><td><span>1 ~ 4 AM （クレバス）</span></td></tr><tr><td><span>C2 - C3</span></td><td><span>3 - 4 時間</span></td><td><span>有</span></td><td>&nbsp;</td></tr><tr><td><span>C3 - ピーク</span></td><td><span>12 - 14 時間</span></td><td><span>有</span></td><td><span>1 ~ 4 AM （行動時間）</span></td></tr></tbody></table></figure><p>&nbsp;</p><ul><li><p><span>所要時間や出発時間はあくまで目安。</span></p></li><li><p><span>C1〜C2間は馬による荷上げが可能。</span></p></li><li><p><span>クレバスや雪崩などの状況で毎年変動がある。</span></p></li></ul><p>&nbsp;</p><p><img src="./images/routes.JPG" alt="climbing routes of north side of Lenin Peak" width="80%" /></p><div style="text-align: center;">Central Asic Travelのルート図、HPから確認できる</div><p>&nbsp;</p><hr /><h3 id='モデルスケジュール'><span>モデルスケジュール</span></h3><p><span>行動は、順応状態や天候に左右されますが、理想的なスケジュールを持っておくと指針となる。</span></p><p><span>さまざまなエージェントのサイトにスケジュール例が紹介されている。次は、私のCentral Asia Travelのスケジュール例（</span><a href='https://www.centralasia-travel.com/en/expeditions/lenin' target='_blank' class='url'>https://www.centralasia-travel.com/en/expeditions/lenin</a><span>）。</span></p><p><span>私の実際の行動記録も紹介する。青色で引かれている線が、モデルケース。</span></p><p><span>＊記録用紙を紛失してしまい、見ずらい画像しかなく申し訳ありません。</span></p><p>&nbsp;</p><p><img src="./images/schedule.png" alt="レーニン峰の写真" width="77%" /></p><div style="text-align: center;">工程表</div><p>&nbsp;</p><p>&nbsp;</p><h2 id='タクティクスの選択肢'><span>タクティクスの選択肢</span></h2><h3 id='登山ルートの紹介ルート選択'><span>登山ルートの紹介・ルート選択</span></h3><p><span>BC がある北側には、代表的なルートが3つある。</span></p><p><span>ノーマルルートの詳細は、以下のサイトで分かりやすく紹介されている：</span></p><p><a href='https://www.phototravel.dp.ua/14-useful/378-lenin-peak-route.html'><span>PhotoTravel |レーニン峰のルート説明</span></a></p><p>&nbsp;</p><p><span>代表的なルートは以下の通り：</span></p><ul><li><p><span>ノーマルルート / ラズデルナヤ峰経由・北西稜ルート（via Razdelnaya Peak and NW Ridge）</span></p></li><li><p><span>リプキン岩稜・北東稜ルート（Lipkin&#39;s Rocks route and NE Ridge）</span></p></li><li><p><span>北壁クラシックルート（Classic North Face route）</span></p></li></ul><p>&nbsp;</p><p><img src="./images/Wiki_Lenin_Peak_routes.jpg" alt="レーニン峰の写真" width="100%" /></p><p><strong><span>レーニン峰のルート図</span></strong><span> | © Wikimedia Commons / Public Domain</span>
+<span>画像リンク：</span><a href='https://en.wikipedia.org/wiki/File:Wiki_Lenin_Peak_routes.jpg' target='_blank' class='url'>https://en.wikipedia.org/wiki/File:Wiki_Lenin_Peak_routes.jpg</a></p><p>&nbsp;</p><hr /><h3 id='荷揚げの選択肢ノーマルルート'><span>荷揚げの選択肢（ノーマルルート）</span></h3><p><span>荷揚げはエージェントに依頼することも可能。</span></p><p><span>私はテントを一張りしか持っていなかったため、テントを持っての移動をできるだけ減らすために、C1を自分の中でBCとみなし、全ての食料・装備をまずC1に荷揚げした。</span></p><p><span>それ以降のキャンプ移動は、天気予報や自分の順応状況を見ながら、必要な日数分の荷揚げ量をその都度決める形となった。</span></p><p><span>荷物のデポについては、エージェントを利用すれば各キャンプサイトの保管庫を使うことができる。</span>
+<span> 例えばCentral Asia Travelでは、BCに鍵付きロッカーがあり、C1以降はキャンプマネージャーが管理する保管倉庫や保管テントが用意されている。</span>
+<span> 保管にはダッフルバッグや土嚢袋、厚手のビニール袋などが便利。</span></p><p>&nbsp;</p><hr /><h3 id='高所順応'><span>高所順応</span></h3><p><span>高所順応の具体的なスケジュールについては、前述の『モデルスケジュール』の項を参照。</span></p><p>&nbsp;</p><h4 id='ノーマルルートでの具体的な順応プロセス'><span>ノーマルルートでの具体的な順応プロセス</span></h4><p><span>一般的には、C3 6,100mまでの順応を終えた後、BC 3,700m で2〜3日休息を取り準備を整える。</span></p><p><span>1日に標高を上げて宿泊するペースは、300〜500m程度が理想的だが、各キャンプ間の標高差は約1,000m。一日のうちに、睡眠をとる標高をそれ以上上げると、順応が追いつかない場合が多い。</span></p><p><span>そのため、近くの小ピークを利用したり、次のキャンプ地やその途中まで登り高所刺激を得た後、基地としているキャンプまで戻るなどして順応する。</span></p><p><span>C1 4,400mで順応ができたら、 ユヒン・ピーク（Yuhin Peak）5,100mへの往復を行い、次の順応ステップに移る人が多い。</span></p><p><span>C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安全性を考慮すると深夜〜早朝の行動が望ましく、そのためワンデイでの往復が難しい。</span></p><p>&nbsp;</p><h4 id='プレ高所順応'><span>プレ高所順応</span></h4><p><span>また、遠征前にある程度の高所順応を済ませておくという方法もある。</span></p><p><span>実際、5,000m級の山で一週間過ごしてから遠征に来たというクライマーでに出会った。</span></p><p><span>私の場合、高い山のない日本にいながら出来る範囲で体を慣らしてから臨んだ。富士山や八ヶ岳でのビバーク（高所での宿泊）や、低酸素室（擬似5,000m）で、体を慣らしてから出発した。対照実験がないため実際どの程度の効果があったかは分からないが、高山病にかかることなく、標準的な日数の約半分の期間で登頂することができた。</span></p><p>&nbsp;</p><p><span>＊なお、酸素ボンベを携行する登山者も少数ながら見受けられた。</span></p><p>&nbsp;</p><h3 id='氷河クレバス帯での行動ポイント'><span>氷河（クレバス帯）での行動ポイント</span></h3><ul><li><p><span>レーニン峰では、毎年数件、クレバス落下事故が報告されている。</span></p></li><li><p><span>グループ行動時はロープアップしてリスクを減らすことができる。</span></p></li><li><p><span>レスキューやセルフレスキューの方法を習得しておく。</span></p></li><li><p><span>ノーマルルートで最もクレバスリスクが高いのはC1〜C2区間。</span></p><ul><li><p><span>前半は大きな口を開けたクレバス、後半はヒドゥンクレバス（隠れたクレバス）が多い。</span></p></li><li><p><span>降雪直後はクレバスが雪に覆われて見えにくくなり、トレースも消えやすくリスクが高まる。</span></p></li></ul></li><li><p><span>氷が安定する時間を狙って、深夜1〜3時に出発するクライマーが多い。</span></p></li><li><p><span>単独行動の場合は、同じく単独のクライマーを探す手もある。</span></p><ul><li><p><span>キャンプマネージャーに相談すれば紹介してもらえる可能性あり。</span></p></li><li><p><span>短いロープを持参するとパートナーが見つかりやすく、遅れが出にくい。</span></p></li><li><p><span>知らない人と組む場合は、レスキューや基本的なロープワークの知識を持つ相手か確認し、リスク共有を忘れないこと。</span></p></li></ul></li><li><p><span>ロープアップパートナーが見つからない場合は、以下の対策でリスク軽減は可能だが、基本的にはパートナーを待つべき（単独は危険）。</span></p><ul><li><p><span>氷が安定する深夜〜早朝にリスクの高い区間を通過する。</span></p></li><li><p><span>ガスやホワイトアウト時は行動を控える。視界不良でクレバスを見落としやすくなるため。</span></p></li><li><p><span>他のグループの前後に挟まれて距離を詰めて行動する。距離を空けすぎない。</span></p></li><li><p><span>必要があれば、ストックやゾンデを使い怪しい箇所を慎重に探る。</span></p></li><li><p><span>GPSやビーコン、笛など、万が一の時に助けを呼べる装備を携行。</span></p></li><li><p><span>セルフレスキューの能力を身につける。自己脱出可能な状況では、誰かにロープを垂らしてもらうことで脱出可能。</span></p></li><li><p><span>雪質が悪かったりトレースが不明瞭な場合は、無理せず引き返す勇気を持つこと。</span></p></li></ul></li></ul><p>&nbsp;</p><p>&nbsp;</p><p><img src="./images/crossing-crevasse.JPG" alt="crossing crevasse" width="60%" /></p><div style="text-align: center;">C1-C2大きなクレバスを通過するザイルパートナー</div><p>&nbsp;</p><p>&nbsp;</p><h2 id='装備日本の冬山との違い'><span>装備・日本の冬山との違い</span></h2><p><span>日本の登攀要素なしの冬山装備をベースに、「長期・高所・氷河」といった条件に合わせて調整する。</span></p><p><span>以下、日本での装備に追加したものや、個人的に迷った点を、私個人の主観で整理した。</span></p><p><span>なお、Central Asia Travel では衣類以外のアックスやクランポン、ブーツといった基本的なギアのレンタルサービス有り。</span></p><p>&nbsp;</p><hr /><h3 id='衣類生活系'><span>衣類・生活系</span></h3><ul><li><p><strong><span>登山靴</span></strong><span>：　ダブルブーツを履いている人が殆ど、シングルブーツを履いている人は自分の他ほぼ見かけなかった。シングルブーツしか持っておらず、ダブルブーツの購入も検討したが、6,000m ~ 7,00mであっても気象条件の良い日にアタックすれば、日本の雪山と同じレベルの寒さと考え、シングルで行くことにした。また、(1) レンタルサービスにシングルブーツがリストに入っていたことや、(2) 海外掲示板で「シングルで大丈夫」という意見があったことも、決断を後押しした。</span>
+<span>恐らく天気次第。風も弱く晴れの日にSummit Pushするならシングルでも十分だった(条件のいい日を狙ったため、寒気に覆われた日本の冬山の方が寒かった)</span></p></li><li><p><strong><span>ダウンジャケット</span></strong><span>：　エクスペディションジャケットをもっていなかったので、新調するか迷った。結果的に新調し、もっていってよかったと考えている。使用したのは、サミットプッシュの日だけだったが、深夜0時に出発して5時間程、吹雪の中の稜線でとてもありがたかった。運良く、気象条件の悪くない日にサミットプッシュを持って行けたが、強風時にアタックすることになるかもしれないと考えると、あった方が無難。C1 4,400mから、ワンピース型のダウンジャケットを着用していた隊もあった。</span></p></li><li><p><strong><span>サングラス</span></strong><span>：　透光率10％以下のレンズが良い。日本で入手可能で、条件を満たす安価なサングラス：「</span><a href='https://www.yodobashi.com/product/100000001004582502/'><span>KOHLA ヒマラヤンサングラス</span></a><span>」。</span></p></li><li><p><strong><span>テント</span></strong><span>：　何個持っていくか迷った。長期戦になるなら、なんどもテントを運ぶ必要のないように2つもっていって、ひとつはC1に常設しようかとも考えた。結果、日本でできる範囲で高所順応し、できるだけ時間をかけず登頂したいと考え軽さを優先しテントは1つにした。</span>
+<span>常設テントの利用を選択肢に入れれば、「もっていかない or 1つ」で十分。「シングルウォール・二人用・4シーズン」を使用。風が強くBCの常設テントが壊れることも。ポールの破損への備えもあると良い。</span></p></li><li><p><strong><span>寝袋</span></strong><span>：　−20C˚対応のシュラフで寒く感じることはなかった。</span></p></li><li><p><strong><span>マット</span></strong><span>：　軽量化したく一枚だけにしたが、エアマットをもっていけばよかった。順応や天気待ちで数日停滞することが考えられるので、ここは快適性を優先するのもありと思った。マットを2枚持ちも多かった。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='ギア系'><span>ギア系</span></h3><ul><li><p><strong><span>ロープ</span></strong><span>：　前述した通り、単独の場合、クレバス帯を通過する際に短いロープをもっていれば同じ単独クライマーとロープアップしやすい。ロープを持っている人を見つける手もあるが、運まかせになるし、条件の合う人が現れなければ工程に遅れが出る可能性あり。</span></p></li><li><p><strong><span>アイスアックス</span></strong><span>：　C1 - C2の急傾斜以外の登攀要素はないので、ストレートタイプで十分。</span></p></li><li><p><strong><span>ロープアップ、FIXロープ用</span></strong><span>：　ハーネス、アッセンダー、ディッセンダー、セルフビレイ器、スリング、カラビナ、アイススクリュー etc.</span></p></li><li><p><strong><span>ストック</span></strong><span>：　クレバスが怪しい箇所を探れるので一本あると便利。</span></p></li><li><p><strong><span>ビーコン</span></strong><span>：　正直迷うところだが、今回は持っていかなかった。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='その他'><span>その他</span></h3><ul><li><p><strong><span>ガス缶</span></strong><span>：　BCで小缶10 USD。未使用のガス缶は売値で引き取ってくれた。使用済みは無料回収。目安として、11日間の山行で2缶使用。</span></p></li><li><p><strong><span>ライター</span></strong><span>：　火打石＋マッチがベストプラクティス。キルギスのスーパーでプリント式ライターを見つけられず、泣く泣くプッシュ式をもっていくも、何回か使用した後故障。持参した防水マッチでは足りそうもなく、分けてもらうことに。</span></p></li><li><p><strong><span>地図</span></strong><span>：　現地で購入可能。ノーマルルートなら必ずしも必要ではない。</span></p></li><li><p><strong><span>デポ袋</span></strong><span>：　ポーターを使わないスタイルには、融雪の際にも使える土嚢袋が用途も広く使いやすかった。</span></p></li><li><p><strong><span>サプリメント</span></strong><span>：　ビタミンとミネラルが特に不足しやすいのでマルチビタミン＋ミネラル。赤血球の生成にも必要。</span></p></li><li><p><strong><span>ダイナモックス</span></strong><span>：　呼吸をゆるやかに促進させる。一応持っていると心強いが、利尿作用等の副作用に注意。</span></p></li><li><p><strong><span>葛根湯</span></strong><span>：　高山病の予備軍のフェーズでは、私の場合は風邪を引いた時のように熱っぽくなる。その際に有効。</span></p></li><li><p><strong><span>ロキソニン</span></strong><span>：　高山病や気圧の急な変化による頭痛で眠れないよく効く便利。</span></p></li></ul><ul><li><p><strong><span>血行促進剤</span></strong><span>：　高所では、高所適応により血液が濃くなり凍傷になりやすい。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2 id='食糧と水'><span>食糧と水</span></h2><h3 id='bc-~c1では食堂の利用可能'><span>BC ~C1では食堂の利用可能</span></h3><ul><li><p><span>BCとC1では、エージェントのレストランを利用可能（約500〜1,500 COM／食）。それ以降は自炊が基本。</span></p></li><li><p><span>高所では消費カロリーが増える一方で、私の場合は消化力が落ちた。</span></p></li><li><p><span>食堂の食事は美味しい反面、オイリーな料理が多いので、量や内容を工夫すると胃の負担が軽くなる。</span></p></li></ul><p>&nbsp;</p><p><img src="./images/agent-foods.png" alt="Agent foods" width="64%" /></p><div style="text-align: center;">BCとC1の食堂にて</div><p>&nbsp;</p><hr /><h3 id='現地のスーパーで調達できるものできないもの'><span>現地のスーパーで調達できるもの・できないもの </span></h3><ul><li><p><strong><span>GLOBUS</span></strong><span>（ビシュケク・オシュ等にある大型スーパー）が便利。</span></p></li></ul><ul><li><p><span>日本のスーパーにあるほとんどの食品は揃う。</span></p></li><li><p><span>ナッツやドライフルーツなど行動食向きの食品も豊富。</span></p></li><li><p><span>手に入らないもの：フリーズドライ食品、エナジーバーなどの登山専用食品は現地にないため、日本から持参推奨。</span></p></li><li><p><span>私がGLOBUSで購入したもの：ラーメン、ビスケット、スニッカーズ、サラミ、チーズなど。</span></p></li><li><p><span>オシュのGLOBUSは、BCへの移動時のピックアップポイントにもなっている。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p><img src="./images/globus.jpg" alt="globus shoppng" width="80%" /></p><div style="text-align: center;">オシュのGLOBUSでの買い物</div><p>&nbsp;</p><p>&nbsp;</p><p><img src="./images/rations.jpg" alt="rations from japan" width="80%" /></p><div style="text-align: center;">日本から持っていった行動食（スニッカーズとナッツ、レーズンは現地調達できた）</div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h3 id='水について'><span>水について</span></h3><ul><li><p><strong><span>BC・C1</span></strong><span>：煮沸したお湯を提供してくれる。</span></p></li><li><p><strong><span>C1以降</span></strong><span>：氷河の雪を溶かして使用。C2には雪解け水の水場あり。</span></p></li><li><p><span>エージェントパッケージを使わない場合の水確保方法：</span></p><ol><li><p><span>エージェントのレストランで食事をしてお湯をもらう。</span></p></li><li><p><span>川の水を汲み、煮沸または高性能フィルターで濾過する。</span></p></li></ol></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='保険について'><span>保険について</span></h2><p><span>日本山岳協会山岳共済会の「</span><a href='https://sangakukyousai.jp/topics/%E6%B5%B7%E5%A4%96%E7%99%BB%E5%B1%B1%E4%BF%9D%E9%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/'><span>海外山岳保険</span></a><span>」に加入しました。</span></p><p><span> この保険には、以下の2種類があり、標高と期間によって価格が決まります。</span></p><p>&nbsp;</p><ul><li><p><span>救援者費用のみカバーするプラン</span></p></li><li><p><span>治療費と救援者費用の両方をカバーするプラン</span></p></li></ul><p>&nbsp;</p><p><span>キルギスは比較的治安が安定していますが、海外では盗難や事故など思わぬトラブルに遭う可能性もあるため、クレジットカード付帯の海外保険も併せて準備しておくと安心です。</span></p><p><span>「海外登山」「高峰登山」もカバーしている山岳保険は多くないため、加入前にその点を必ず確認すること。</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='登山中の水電気通信天気予報'><span>登山中の水・電気・通信・天気予報</span></h2><p><span>以下は </span><strong><span>Central Asia Travel</span></strong><span> を利用した場合の情報です。</span></p><p><span>エージェントによって状況は異なるため、事前に必ず確認しましょう。</span></p><p><span>エージェントを使わない場合は、インフラ環境を自分で計画・準備する必要があります。</span></p><p>&nbsp;</p><hr /><h3 id='電気通信'><span>電気・通信</span></h3><ul><li><p><strong><span>BC（ベースキャンプ）</span></strong></p><ul><li><p><span>電気・Wi-Fiあり</span></p></li><li><p><span>モバイル通信圏内</span></p></li></ul></li><li><p><strong><span>C1（キャンプ1）</span></strong></p><ul><li><p><span>決められた時間のみ電気・Wi-Fi使用可</span></p></li><li><p><span>以降のキャンプではネット環境なし</span></p></li></ul></li><li><p><strong><span>電源確保</span></strong></p><ul><li><p><span>モバイルバッテリー・ソーラーチャージャー持参が基本</span></p></li><li><p><span>不足時はエージェントのレストラン利用時に充電</span></p></li></ul></li><li><p><strong><span>通信・安全管理</span></strong></p><ul><li><p><span>無線を使って1日4回、C1常駐のセーフティーマネージャーへ「現在地・予定」を報告</span></p></li><li><p><span>キャンプ地ではキャンプマネージャー、移動中は無線で連絡可能</span></p></li></ul></li><li><p><strong><span>エージェントを使わない場合の選択肢</span></strong></p><ol><li><p><span>ソーラーチャージャー＆モバイルバッテリーで自力確保</span></p></li><li><p><span>他クライマーやエージェントの施設で充電を依頼</span></p></li><li><p><span>必要情報は直接聞く</span></p></li></ol></li></ul><p>&nbsp;</p><hr /><h3 id='天気予報'><span>天気予報</span></h3><ul><li><p><strong><a href='https://www.mountain-forecast.com/peaks/Pik-Lenin/forecasts/7134'><span>Mountain Forecast</span></a><span> </span></strong></p><ul><li><p><span>標高別予報が確認可能</span></p></li><li><p><span>ネット環境がなくても、最後に読み込んだ予報をオフラインで表示できる</span></p></li><li><p><span>無料：6日分の予報</span></p></li><li><p><span>有料（月600円）：12日分の予報（遠征時にサブスク推奨）</span></p></li></ul></li><li><p><strong><span>C2以降</span></strong><span>（ネット環境なし）</span></p><ul><li><p><span>キャンプマネージャーから天気情報を取得</span></p></li></ul></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='キルギスでの生活観光'><span>キルギスでの生活・観光</span></h2><h3 id='お金について'><span>お金について</span></h3><ul><li><p><span>キルギスでは日本円は使えないため、事前に米ドルやユーロに両替しておくのがおすすめ。</span></p></li><li><p><span>ビシュケクやオシュには、手数料無料のATMが多数あります。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='移動手段'><span>移動手段</span></h3><ul><li><p><span>タクシーは「Yandex Go」というアプリで安く配車可能。普通のタクシーは約2〜3倍の値段だった。</span></p></li><li><p><span>バスのルート検索や時刻確認には「Yandex Maps」が便利。市内であれば、基本的に20 COMで移動可能。</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2 id='参考資料とリンク集'><span>参考資料とリンク集</span></h2><h3 id='全体概要'><span>全体・概要</span></h3><ul><li><p><a href='https://www.phototravel.dp.ua/en/travels/climbs/892-lenin-peak-preparation-en.html#google_vignette'><span>Solo ascent guide</span></a><span>：　 英語圏（特にヨーロッパ）向けに必要な情報が網羅されている。</span></p></li><li><p><a href='https://www.theuiaa.org/mountain-medicine/lenin-peak/#:~:text=The peak climbing season is,has the most rainy days.'><span>Lenin Peak - UIAA</span></a><span>：　UIAAによる信頼性の高い基本情報。</span></p></li><li><p><a href='https://www.summitpost.org/pik-lenin/150355'><span>SummitPost | Pik Lenin</span></a><span>：　アクセス等の基本情報および登山者の記録。</span></p></li><li><p><a href='https://www.yunnan-k.jp/images/stories/20211218_54/03-kondo/参考資料2ー限りなき山行第1回第14回_登山時報No.527-2019-01-No.541-2020-03.pdf'><span>『中央アジアの高峰』</span></a><span>：　中央アジアの概念図や高峰の山々を把握できる資料。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='ルート情報'><span>ルート情報</span></h3><ul><li><p><a href='https://en.wikipedia.org/wiki/Lenin_Peak'><span>Wikipedia Lenin Peak</span></a><span>：　代表的なルートが図で紹介されている。</span></p></li><li><p><a href='https://www.centralasia-travel.com/en/expeditions/lenin'><span>Central Asia Travel</span></a><span>：　今回利用したエージェント。見やすいルート図あり。</span></p></li><li><p><a href='https://www.phototravel.dp.ua/14-useful/378-lenin-peak-route.html'><span>PhotoTravel | レーニン峰のルート説明</span></a><span>：　ノーマルルートの様子が写真付きでわかりやすく整理されている。</span></p></li><li><p><a href='https://aozorasangakukai.namaste.jp/no28.html'><span>青空山岳会ブログ</span></a><span>：　ルートの様子と旅の全体像がイメージしやすい写真豊富なサイト。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='装備関連'><span>装備関連</span></h3><ul><li><p><a href='https://montepazproducts.com/?page_id=1946'><span>Monte-Paz Products | 山用サングラスの選び方</span></a><span>：　山岳用サングラスの選び方の解説。</span></p></li><li><p><a href='https://www.reddit.com/r/Mountaineering/comments/7ve4hm/best_boots_for_60007000m_explain_to_me_please/'><span>Reddit：Best boots for 6000-7000m</span></a><span>：　6000〜7000m級に適した登山靴のモデル比較と解説。</span></p></li></ul><p>&nbsp;</p><hr /><h3 id='その他参考リンク'><span>その他参考リンク</span></h3><ul><li><p><a href='https://www.reddit.com/r/Mountaineering/comments/1hob5nt/peak_lenin_climb_in_2025/'><span>Reddit：Peak Lenin climb in 2025</span></a></p></li><li><p><a href='https://www.quora.com/How-many-people-climb-Peak-Lenin-solo-Is-it-possible-to-climb-without-a-guide-What-are-the-most-difficult-sections'><span>Quora：How many people climb Peak Lenin solo?</span></a></p></li></ul><p>&nbsp;</p><p>&nbsp;</p></div></div>
+</body>
+</html>
