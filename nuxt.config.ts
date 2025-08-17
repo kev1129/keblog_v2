@@ -4,6 +4,10 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   ssr: false,  // SSRをオフにして静的サイト化
+  site: { 
+    url: 'https://keblog.org', 
+    name: 'This is keblog.' 
+  }, 
   app: {
     head: {
       charset: 'utf-16',
@@ -45,13 +49,12 @@ export default defineNuxtConfig({
   sitemap: {
     hostname: 'https://keblog.org',
     gzip: true,
-    xsl: true,
     routes: [
       '/',
       '/contact',
       '/blog/lenin-doc',
       '/blog/lenin-guide'
-    ]
+    ],
   },
   googleFonts: {
     families: {
