@@ -21,7 +21,7 @@ tags:
 
 計画を進める過程で、多くの登山記録やブログを参考にさせていただき、大変助けられた経験から、今回得られた情報や実体験を整理して残すことにしました。この記事は、その『ガイド編』です。
 
-実際の行動記録や、使用した装備リストなどは[『記録編』](./lenin-doc)に、この記事の補完的に参照できるよう、まとめられています。
+実際の行動記録や、使用した装備リストなどは「[『レーニン峰 登頂記録 | 25/07』](./lenin-doc)」に、この記事の補完的に参照できるよう、まとめられています。
 
 
 
@@ -883,11 +883,11 @@ C1 4,400m - C2 5,300mはクレバスの多い氷河区間になるため、安�
 
 ### 全体・概要
 
+- [『レーニン峰 登頂記録 | 25/07』](./lenin-doc)
 - [Solo ascent guide](https://www.phototravel.dp.ua/en/travels/climbs/892-lenin-peak-preparation-en.html#google_vignette)：　 英語圏（特にヨーロッパ）向けに必要な情報が網羅されている。
 - [Lenin Peak - UIAA](https://www.theuiaa.org/mountain-medicine/lenin-peak/)：　UIAAによる信頼性の高い基本情報。
 - [SummitPost | Pik Lenin](https://www.summitpost.org/pik-lenin/150355)：　アクセス等の基本情報および登山者の記録。
 - [『中央アジアの高峰』](https://www.yunnan-k.jp/images/stories/20211218_54/03-kondo/参考資料2ー限りなき山行第1回第14回_登山時報No.527-2019-01-No.541-2020-03.pdf)：　中央アジアの概念図や高峰の山々を把握できる資料。
-
 
 
 

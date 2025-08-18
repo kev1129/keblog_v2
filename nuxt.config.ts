@@ -3,25 +3,43 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  ssr: false,  // SSRをオフにして静的サイト化
+  ssr: true,  // SSRをオフにして静的サイト化
   site: { 
     url: 'https://keblog.org', 
     name: 'This is keblog.' 
   }, 
   app: {
     head: {
-      charset: 'utf-16',
+      charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
       title: 'keblog',
-      link: [
-      //  { rel: 'canonical', href: 'xxx'},
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-      ],
       meta: [
+        { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1'},
-        { name: 'description', content: 'This is keblog.'},
+        { name: 'description', content: 'keblog | 遠征登山の情報や記録をまとめたブログ'},
+        { name: 'keywords', content: 'レーニン峰, 登山, 高所登山, 装備, 記録, Lenin Peak, Expedition' },
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
+
+        // OGP用
+        { property: 'og:title', content: 'keblog' },
+        { property: 'og:description', content: 'keblog | 遠征登山の情報や記録をまとめたブログ' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://keblog.org' },
+        { property: 'og:image', content: 'https://keblog.org/og-image.png' },
+
+        // Twitterカード
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'keblog' },
+        { name: 'twitter:description', content: 'keblog | 遠征登山の情報や記録をまとめたブログ' },
+        { name: 'twitter:image', content: 'https://keblog.org/og-image.png' }
       ],
+      link: [
+          { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+          { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+          { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }, // apple home icon
+          { rel: 'manifest', href: '/site.webmanifest' }, // Android系
+        ],
+  
     }
   },
   devtools: { enabled: true },

@@ -17,11 +17,22 @@
 </template>
 
 <script setup>
-import '~/assets/scss/typora-base.scss'
-
 const slug = useRoute().params.slug
+
 const { data: post } = await useAsyncData(`blog-${slug}`, () => {
   return queryCollection('blog').path(`/blog/${slug}`).first()
+})
+
+useHead({
+  title: post.title,
+  meta: [
+    { name: 'description', content: post.description },
+//    { name: 'keywords', content: post.keywords },
+    // OGPも記事ごとに出したい場合
+    { property: 'og:title', content: post.title },
+    { property: 'og:description', content: post.description },
+//    { property: 'og:image', content: post.ogImage || '/default-og.png' },
+  ]
 })
 </script>
 
