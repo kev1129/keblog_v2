@@ -120,6 +120,24 @@
         font-size: 0.8rem;
         font-style: normal;
     }
+
+    pre {
+        margin-top: 22px;
+        margin-bottom: 22px;
+        font-family: inherit;
+        padding-left: 8px;
+        background-color: rgb(246,246,246);
+
+        code {
+            font-family: inherit;
+            font-size: 0.8rem;    
+        }
+    
+    }
+
+    code, kbd, pre, samp {
+        font-family: inherit;
+    }
       
     
 
