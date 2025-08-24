@@ -42,8 +42,8 @@ tags:
 
 |      | 特徴                                                         | 主な用途                       |
 | ---- | ------------------------------------------------------------ | ------------------------------ |
-| 横爪 | 接面が大きい→<br />・雪・氷面での安定性が高い<br />・その分、氷面への刺さりは弱い（または氷を破りやすい） | 一般雪山登山（登攀要素少なめ） |
-| 縦爪 | 接面が小さい→<br />・固い氷でも刺さりやすい<br />・その分、雪面での安定性は低い | アイス / ミックスクライミング  |
+| 横爪 | 接面が大きい：<br />・雪・氷面での安定性が高い<br />・その分、氷面への刺さりは弱い（または氷を破りやすい） | 一般雪山登山（登攀要素少なめ） |
+| 縦爪 | 接面が小さい：<br />・固い氷でも刺さりやすい<br />・その分、雪面での安定性は低い | アイス / ミックスクライミング  |
 
 
 
@@ -99,9 +99,8 @@ tags:
 
 
 - **デュアルポイント × 平爪**：　一般的な雪山登山、登攀要素少なめ
-
-* **デュアルポイント × 縦爪**：　長いマルチピッチや春の緩んだ氷でのアイス・ミックスクライミング
-* **モノポイント 　　× 縦爪**：　細かいフットホールドを使う・冬季の硬い氷でのアイス・ミックスクライミング
+- **デュアルポイント × 縦爪**：　長いマルチピッチや春の緩んだ氷でのアイス・ミックスクライミング
+- **モノポイント 　　× 縦爪**：　細かいフットホールドを使う・冬季の硬い氷でのアイス・ミックスクライミング
 
 
 
@@ -127,8 +126,7 @@ tags:
 - [Lost Arrow | クランポンの選び方とフィッティング](https://www.lostarrow.co.jp/blackdiamond/support/techinfo/TI2013_BD_Crampon-Choice.html?srsltid=AfmBOooEk1USXIEcwIyEDkeU_957UFUqhMUCiIUz3ZpOiqVhj8Mvt367)：アイゼン選びの全体像
 - [Mountain Project | Mono Point or Dual Point Crampons](https://www.mountainproject.com/forum/topic/123740144/mono-point-or-dual-point-crampons)：モノ vs デュアル
 - [Reddit | Dual or mono vertical front points for WI3-5?](https://www.reddit.com/r/iceclimbing/comments/107mv8w/dual_or_mono_vertical_front_points_for_wi35/)：モノ vs デュアル
-
-* [山岳金物店 | サイボーグ プロ](https://alpine-hardware.com/products/detail/502)：縦爪 vs 横爪
+- [山岳金物店 | サイボーグ プロ](https://alpine-hardware.com/products/detail/502)：縦爪 vs 横爪
 
 
 
