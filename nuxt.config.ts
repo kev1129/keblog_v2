@@ -71,7 +71,9 @@ export default defineNuxtConfig({
       '/',
       '/contact',
       '/blog/lenin-doc',
-      '/blog/lenin-guide'
+      '/blog/lenin-guide',
+      '/blog/island',
+      '/blog/howto-select-crampon'
     ],
   },
   googleFonts: {
