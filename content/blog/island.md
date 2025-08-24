@@ -609,8 +609,6 @@ tags:
 - [西遊旅行 | アイランド(６,１８９ｍ)ピーク Island Peak 登頂](https://www.saiyu.co.jp/itinerary/new/GTNP50/)
 - [Peregrine Treks & Tours | アイランドピーク登山の難易度: 登山家を目指す人のための総合ガイド](https://peregrinetreks.com/ja/blog/%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%E3%83%94%E3%83%BC%E3%82%AF%E7%99%BB%E5%B1%B1%E3%81%AE%E9%9B%A3%E6%98%93%E5%BA%A6)
 - [エベレスト街道トレッキングとは？](https://www.camp-outdoor.com/tozan/everest/about_trekking.shtml#google_vignette)
-- [エベレスト街道トレッキング記-はじめに-](https://note.com/haruka_uchida/n/na5fc9b063256?sub_rt=share_sb)
-- [山と渓谷オンライン | エベレスト街道を歩き、標高6189mのアイランドピークをめざす](https://www.yamakei-online.com/yama-ya/detail.php?id=3812)
 
 
 
